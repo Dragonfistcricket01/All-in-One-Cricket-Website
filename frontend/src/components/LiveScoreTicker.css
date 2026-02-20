@@ -1,0 +1,448 @@
+/* ==================== LIVE SCORE TICKER CONTAINER ==================== */
+.live-score-ticker-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 900px;
+    margin: 0 1rem;
+    overflow: hidden;
+    height: 115px;
+}
+
+/* API Indicator*/
+.api-indicator-header {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* ==================== SCROLL CONTAINER ==================== */
+.ticker-scroll-container-header {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex: 1;
+}
+
+.ticker-scroll-container-header::-webkit-scrollbar {
+    display: none;
+}
+
+/* ==================== MATCHES CONTAINER ==================== */
+.ticker-matches-header {
+    display: flex;
+    gap: 0.45rem;
+    /*padding: 0.5rem 0;*/
+    align-items: center;
+}
+
+/* ==================== MATCH CARD - NEW DESIGN ==================== */
+.match-card-header {
+    min-width: 280px;
+    max-width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 0.7rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /*gap: 0.6rem;*/
+}
+
+.match-card-header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 120, 0, 0.4);
+}
+
+/* Dark Mode Match Card */
+.dark-mode .match-card-header {
+    background: #2d2d2d;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .match-card-header:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 120, 0, 0.6);
+    background: #333333;
+}
+
+/* Left Border Color by Status */
+.match-card-header.live {
+    border-left: 4px solid #ff3300;
+}
+
+.match-card-header.completed {
+    border-left: 4px solid #4caf50;
+}
+
+.match-card-header.scheduled {
+    border-left: 4px solid #2196f3;
+}
+
+/* ==================== MATCH HEADER ==================== */
+.match-header-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Match Status Badge */
+.match-status-header {
+    font-size: 0.65rem;
+    /*font-weight: 700;*/
+    padding: 0.3rem 0.3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    line-height: 1;
+}
+
+/* LIGHT THEME - Status Badges */
+.match-status-header.live {
+    background: rgba(255, 51, 0, 0.15);
+    color: #ff3300;
+    border: 1px solid rgba(255, 51, 0, 0.3);
+}
+
+.match-status-header.completed {
+    background: rgba(76, 175, 80, 0.15);
+    color: #2e7d32;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.match-status-header.scheduled {
+    background: rgba(33, 150, 243, 0.15);
+    color: #1976d2;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+/* DARK MODE - Status Badges */
+.dark-mode .match-status-header.live {
+    background: rgba(255, 51, 0, 0.2);
+    color: #ff5722;
+    border: 1px solid rgba(255, 51, 0, 0.4);
+}
+
+.dark-mode .match-status-header.completed {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+    border: 1px solid rgba(76, 175, 80, 0.4);
+}
+
+.dark-mode .match-status-header.scheduled {
+    background: rgba(33, 150, 243, 0.2);
+    color: #42a5f5;
+    border: 1px solid rgba(33, 150, 243, 0.4);
+}
+
+/* Live Dot Animation */
+.live-dot {
+    animation: pulse 1.5s infinite;
+    font-size: 0.6rem;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* Match Format Badge */
+.match-format-header {
+    font-size: 0.6rem;
+    /*font-weight: 700;*/
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+}
+
+/* LIGHT THEME - Format Badge */
+.match-format-header {
+    color: #555;
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* DARK MODE - Format Badge */
+.dark-mode .match-format-header {
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ==================== MATCH LEAGUE ==================== */
+.match-league-header {
+    font-size: 0.63rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* LIGHT THEME */
+.match-league-header {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* DARK MODE */
+.dark-mode .match-league-header {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==================== TEAMS & SCORES ==================== */
+.match-teams-header {
+    display: flex;
+    flex-direction: column;
+    /*gap: 0.5rem;*/
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-name-header {
+    /*font-weight: 700;*/
+    font-size: 0.85rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+/* LIGHT THEME */
+.team-name-header {
+    color: #1a1a1a;
+}
+
+/* DARK MODE */
+.dark-mode .team-name-header {
+    color: white;
+}
+
+.team-score-header {
+    font-weight: 700;
+    color: #ff7800;
+    font-size: 0.85rem;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
+
+/* ==================== MATCH INFO ==================== */
+.match-info-header {
+    font-size: 0.63rem;
+    line-height: 1.4;
+    /*min-height: 20px;*/
+}
+
+/* LIGHT THEME */
+.match-info-header {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* DARK MODE */
+.dark-mode .match-info-header {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.match-detail-header {
+    display: block;
+    font-weight: 500;
+}
+
+/* LIGHT THEME */
+.match-detail-header {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* DARK MODE */
+.dark-mode .match-detail-header {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.match-result-header {
+    display: block;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+.match-countdown-header {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #2196f3;
+    font-weight: 600;
+}
+
+.match-countdown-header i {
+    font-size: 0.85rem;
+}
+
+/* ==================== SCROLL BUTTONS ==================== */
+.ticker-scroll-btn-header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #ff7800, #ff5600);
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 120, 0, 0.4);
+}
+
+.ticker-scroll-btn-header:hover {
+    background: linear-gradient(135deg, #ff9a00, #ff7800);
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 6px 20px rgba(255, 120, 0, 0.6);
+}
+
+.ticker-scroll-btn-header:active {
+    transform: translateY(-50%) scale(1.05);
+}
+
+.ticker-scroll-btn-header.left {
+    left: -15px;
+}
+
+.ticker-scroll-btn-header.right {
+    right: -15px;
+}
+
+/* ==================== LOADING & NO MATCHES ==================== */
+.ticker-loading-header,
+.ticker-no-matches-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+/* LIGHT THEME */
+.ticker-loading-header,
+.ticker-no-matches-header {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* DARK MODE */
+.dark-mode .ticker-loading-header,
+.dark-mode .ticker-no-matches-header {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.ticker-loading-header i,
+.ticker-no-matches-header i {
+    font-size: 1.2rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+    .live-score-ticker-header {
+        max-width: 700px;
+    }
+
+    .match-card-header {
+        min-width: 260px;
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .live-score-ticker-header {
+        max-width: 100%;
+        margin: 0 0.5rem;
+        height: 130px;
+    }
+
+    .match-card-header {
+        min-width: 240px;
+        max-width: 240px;
+        padding: 0.8rem;
+    }
+
+    .ticker-scroll-btn-header {
+        width: 32px;
+        height: 32px;
+        font-size: 1.3rem;
+    }
+
+    .ticker-scroll-btn-header.left {
+        left: -10px;
+    }
+
+    .ticker-scroll-btn-header.right {
+        right: -10px;
+    }
+
+    .api-indicator-header {
+        font-size: 0.6rem;
+        padding: 2px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .match-card-header {
+        min-width: 220px;
+        max-width: 220px;
+        padding: 0.7rem;
+    }
+
+    .ticker-matches-header {
+        gap: 0.8rem;
+    }
+}

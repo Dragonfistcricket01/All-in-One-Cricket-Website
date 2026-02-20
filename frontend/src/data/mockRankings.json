@@ -1,0 +1,770 @@
+{
+  "testBatsmen": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Joe Root",
+      "country": "England",
+      "flag": "🏴󠁧󠁢",
+      "rating": 899,
+      "previousRating": 895,
+      "image": "https://i.ibb.co/9yJ8Lqm/root.jpg"
+    },
+    {
+      "rank": 2,
+      "previousRank": 3,
+      "player": "Kane Williamson",
+      "country": "New Zealand",
+      "flag": "🇳🇿",
+      "rating": 883,
+      "previousRating": 870,
+      "image": "https://i.ibb.co/9TXMc6j/kane.jpg"
+    },
+    {
+      "rank": 3,
+      "previousRank": 2,
+      "player": "Steve Smith",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 874,
+      "previousRating": 876,
+      "image": "https://i.ibb.co/QfLKfXk/smith.jpg"
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "player": "Virat Kohli",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 857,
+      "previousRating": 858,
+      "image": "https://i.ibb.co/ZMZw8Wn/virat.jpg"
+    },
+    {
+      "rank": 5,
+      "previousRank": 6,
+      "player": "Babar Azam",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 845,
+      "previousRating": 832,
+      "image": "https://i.ibb.co/5vXqJ7m/babar.jpg"
+    },
+    {
+      "rank": 6,
+      "previousRank": 5,
+      "player": "Rohit Sharma",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 839,
+      "previousRating": 841,
+      "image": "https://i.ibb.co/B3pK8Qt/rohit.jpg"
+    },
+    {
+      "rank": 7,
+      "previousRank": 7,
+      "player": "Marnus Labuschagne",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 825,
+      "previousRating": 823,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 8,
+      "previousRank": 9,
+      "player": "Daryl Mitchell",
+      "country": "New Zealand",
+      "flag": "🇳🇿",
+      "rating": 812,
+      "previousRating": 798,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 9,
+      "previousRank": 8,
+      "player": "Yashasvi Jaiswal",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 807,
+      "previousRating": 809,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 10,
+      "previousRank": 10,
+      "player": "Harry Brook",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 795,
+      "previousRating": 794,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "testBowlers": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Jasprit Bumrah",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 892,
+      "previousRating": 890,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 3,
+      "player": "Pat Cummins",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 871,
+      "previousRating": 858,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 2,
+      "player": "Ravichandran Ashwin",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 865,
+      "previousRating": 867,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "player": "Josh Hazlewood",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 854,
+      "previousRating": 853,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 6,
+      "player": "Kagiso Rabada",
+      "country": "South Africa",
+      "flag": "🇿🇦",
+      "rating": 843,
+      "previousRating": 831,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 6,
+      "previousRank": 5,
+      "player": "James Anderson",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 837,
+      "previousRating": 839,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 7,
+      "previousRank": 7,
+      "player": "Nathan Lyon",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 828,
+      "previousRating": 827,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 8,
+      "previousRank": 9,
+      "player": "Mohammed Siraj",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 815,
+      "previousRating": 803,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 9,
+      "previousRank": 8,
+      "player": "Mitchell Starc",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 809,
+      "previousRating": 811,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 10,
+      "previousRank": 10,
+      "player": "Ravindra Jadeja",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 798,
+      "previousRating": 797,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "testAllRounders": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Ravindra Jadeja",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 425,
+      "previousRating": 423,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 2,
+      "player": "Ravichandran Ashwin",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 401,
+      "previousRating": 400,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 4,
+      "player": "Ben Stokes",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 387,
+      "previousRating": 374,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 4,
+      "previousRank": 3,
+      "player": "Mitchell Marsh",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 378,
+      "previousRating": 381,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 5,
+      "player": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "flag": "🇧🇩",
+      "rating": 365,
+      "previousRating": 364,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "odiBatsmen": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Babar Azam",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 887,
+      "previousRating": 885,
+      "image": "https://i.ibb.co/5vXqJ7m/babar.jpg"
+    },
+    {
+      "rank": 2,
+      "previousRank": 2,
+      "player": "Virat Kohli",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 875,
+      "previousRating": 873,
+      "image": "https://i.ibb.co/ZMZw8Wn/virat.jpg"
+    },
+    {
+      "rank": 3,
+      "previousRank": 4,
+      "player": "Rohit Sharma",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 862,
+      "previousRating": 848,
+      "image": "https://i.ibb.co/B3pK8Qt/rohit.jpg"
+    },
+    {
+      "rank": 4,
+      "previousRank": 3,
+      "player": "Shubman Gill",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 856,
+      "previousRating": 859,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 5,
+      "player": "Kane Williamson",
+      "country": "New Zealand",
+      "flag": "🇳🇿",
+      "rating": 843,
+      "previousRating": 842,
+      "image": "https://i.ibb.co/9TXMc6j/kane.jpg"
+    },
+    {
+      "rank": 6,
+      "previousRank": 7,
+      "player": "David Warner",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 831,
+      "previousRating": 819,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 7,
+      "previousRank": 6,
+      "player": "Quinton de Kock",
+      "country": "South Africa",
+      "flag": "🇿🇦",
+      "rating": 824,
+      "previousRating": 827,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 8,
+      "previousRank": 8,
+      "player": "Joe Root",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 812,
+      "previousRating": 811,
+      "image": "https://i.ibb.co/9yJ8Lqm/root.jpg"
+    },
+    {
+      "rank": 9,
+      "previousRank": 10,
+      "player": "Daryl Mitchell",
+      "country": "New Zealand",
+      "flag": "🇳🇿",
+      "rating": 805,
+      "previousRating": 792,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 10,
+      "previousRank": 9,
+      "player": "Fakhar Zaman",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 798,
+      "previousRating": 801,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "odiBowlers": [
+    {
+      "rank": 1,
+      "previousRank": 2,
+      "player": "Jasprit Bumrah",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 726,
+      "previousRating": 712,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 1,
+      "player": "Mohammed Siraj",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 718,
+      "previousRating": 720,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 3,
+      "player": "Rashid Khan",
+      "country": "Afghanistan",
+      "flag": "🇦🇫",
+      "rating": 709,
+      "previousRating": 707,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 4,
+      "previousRank": 5,
+      "player": "Trent Boult",
+      "country": "New Zealand",
+      "flag": "🇳🇿",
+      "rating": 695,
+      "previousRating": 681,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 4,
+      "player": "Josh Hazlewood",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 688,
+      "previousRating": 690,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 6,
+      "previousRank": 6,
+      "player": "Shaheen Afridi",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 679,
+      "previousRating": 677,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 7,
+      "previousRank": 8,
+      "player": "Mitchell Starc",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 665,
+      "previousRating": 653,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 8,
+      "previousRank": 7,
+      "player": "Kuldeep Yadav",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 658,
+      "previousRating": 661,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 9,
+      "previousRank": 9,
+      "player": "Adam Zampa",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 645,
+      "previousRating": 644,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 10,
+      "previousRank": 11,
+      "player": "Kagiso Rabada",
+      "country": "South Africa",
+      "flag": "🇿🇦",
+      "rating": 637,
+      "previousRating": 625,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "odiAllRounders": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "flag": "🇧🇩",
+      "rating": 365,
+      "previousRating": 363,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 3,
+      "player": "Glenn Maxwell",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 321,
+      "previousRating": 308,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 2,
+      "player": "Mohammad Nabi",
+      "country": "Afghanistan",
+      "flag": "🇦🇫",
+      "rating": 314,
+      "previousRating": 318,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "player": "Hardik Pandya",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 298,
+      "previousRating": 297,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 5,
+      "player": "Mitchell Marsh",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 285,
+      "previousRating": 284,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "t20iBatsmen": [
+    {
+      "rank": 1,
+      "previousRank": 2,
+      "player": "Suryakumar Yadav",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 851,
+      "previousRating": 838,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 1,
+      "player": "Mohammad Rizwan",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 845,
+      "previousRating": 847,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 3,
+      "player": "Babar Azam",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 832,
+      "previousRating": 831,
+      "image": "https://i.ibb.co/5vXqJ7m/babar.jpg"
+    },
+    {
+      "rank": 4,
+      "previousRank": 5,
+      "player": "Travis Head",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 818,
+      "previousRating": 804,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 4,
+      "player": "Phil Salt",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 812,
+      "previousRating": 815,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 6,
+      "previousRank": 6,
+      "player": "Yashasvi Jaiswal",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 799,
+      "previousRating": 798,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 7,
+      "previousRank": 8,
+      "player": "Jos Buttler",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 785,
+      "previousRating": 772,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 8,
+      "previousRank": 7,
+      "player": "Glenn Maxwell",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 778,
+      "previousRating": 781,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 9,
+      "previousRank": 9,
+      "player": "Aaron Finch",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 765,
+      "previousRating": 764,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 10,
+      "previousRank": 11,
+      "player": "Rohit Sharma",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 758,
+      "previousRating": 745,
+      "image": "https://i.ibb.co/B3pK8Qt/rohit.jpg"
+    }
+  ],
+  "t20iBowlers": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Rashid Khan",
+      "country": "Afghanistan",
+      "flag": "🇦🇫",
+      "rating": 792,
+      "previousRating": 790,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 3,
+      "player": "Adil Rashid",
+      "country": "England",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "rating": 765,
+      "previousRating": 752,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 2,
+      "player": "Wanindu Hasaranga",
+      "country": "Sri Lanka",
+      "flag": "🇱🇰",
+      "rating": 758,
+      "previousRating": 761,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "player": "Josh Hazlewood",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 741,
+      "previousRating": 739,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 6,
+      "player": "Jasprit Bumrah",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 728,
+      "previousRating": 715,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 6,
+      "previousRank": 5,
+      "player": "Shaheen Afridi",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 722,
+      "previousRating": 725,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 7,
+      "previousRank": 7,
+      "player": "Anrich Nortje",
+      "country": "South Africa",
+      "flag": "🇿🇦",
+      "rating": 709,
+      "previousRating": 707,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 8,
+      "previousRank": 9,
+      "player": "Haris Rauf",
+      "country": "Pakistan",
+      "flag": "🇵🇰",
+      "rating": 695,
+      "previousRating": 682,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 9,
+      "previousRank": 8,
+      "player": "Adam Zampa",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 688,
+      "previousRating": 691,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 10,
+      "previousRank": 10,
+      "player": "Mitchell Starc",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 675,
+      "previousRating": 674,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "t20iAllRounders": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "player": "Hardik Pandya",
+      "country": "India",
+      "flag": "🇮🇳",
+      "rating": 279,
+      "previousRating": 277,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 2,
+      "previousRank": 3,
+      "player": "Marcus Stoinis",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 256,
+      "previousRating": 243,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 3,
+      "previousRank": 2,
+      "player": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "flag": "🇧🇩",
+      "rating": 251,
+      "previousRating": 254,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "player": "Mohammad Nabi",
+      "country": "Afghanistan",
+      "flag": "🇦🇫",
+      "rating": 238,
+      "previousRating": 237,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "rank": 5,
+      "previousRank": 5,
+      "player": "Glenn Maxwell",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "rating": 225,
+      "previousRating": 224,
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+}

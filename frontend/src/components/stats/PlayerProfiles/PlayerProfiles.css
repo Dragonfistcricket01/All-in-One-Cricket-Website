@@ -1,0 +1,661 @@
+/* ==================== PLAYER PROFILES PAGE ==================== */
+.player-profiles-page {
+    min-height: 100vh;
+    /*background: var(--bg-primary);*/
+    padding-bottom: 4rem;
+}
+
+/* ==================== PAGE HEADER ==================== */
+.profiles-header-player-profiles {
+    /*background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);*/
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+.header-content-player-profiles h1 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header-content-player-profiles h1 i {
+    color: var(--accent);
+    font-size: 2.5rem;
+}
+
+.header-content-player-profiles p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* ==================== CONTROLS SECTION ==================== */
+.profiles-controls-player-profiles {
+    background: var(--card-bg);
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.controls-container-player-profiles {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Search Box */
+.search-box-player-profiles {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-box-player-profiles i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.search-box-player-profiles input {
+    width: 100%;
+    padding: 14px 48px 14px 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-box-player-profiles input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.search-box-player-profiles input::placeholder {
+    color: var(--text-secondary);
+}
+
+.clear-search-player-profiles {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.clear-search-player-profiles:hover {
+    background: transparent;
+    color: white;
+}
+
+/* Filters Row */
+.filters-row-player-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-group-player-profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group-player-profiles label {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-group-player-profiles label i {
+    color: var(--accent);
+}
+
+.filter-group-player-profiles select {
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filter-group-player-profiles select:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.filter-group-player-profiles select option {
+    background: var(--card-bg);
+    color: var(--text-primary);
+}
+
+.clear-filters-btn-player-profiles {
+    padding: 12px 20px;
+    background: rgba(239, 68, 68, 0.2);
+    border: 2px solid #ef4444;
+    border-radius: 10px;
+    color: #ef4444;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.clear-filters-btn-player-profiles:hover {
+    background: #ef4444;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Results Count */
+.results-count-player-profiles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.results-count-player-profiles i {
+    color: var(--accent);
+}
+
+/* ==================== PLAYERS GRID ==================== */
+.profiles-container-player-profiles {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.players-grid-player-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* ==================== LOADING STATE ==================== */
+.loading-container-player-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 1rem;
+}
+
+.loading-container-player-profiles i {
+    font-size: 3rem;
+    color: var(--accent);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container-player-profiles p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* ==================== NO PLAYERS STATE ==================== */
+.no-players-player-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    gap: 1rem;
+    text-align: center;
+}
+
+.no-players-player-profiles i {
+    font-size: 4rem;
+    color: var(--text-secondary);
+}
+
+.no-players-player-profiles h3 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.no-players-player-profiles p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.reset-btn-player-profiles {
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.reset-btn-player-profiles i {
+    color: white;
+}
+
+.reset-btn-player-profiles:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 0, 0.4);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+    .players-grid-player-profiles {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profiles-header-player-profiles {
+        padding: 2rem 1rem;
+    }
+
+    .header-content-player-profiles h1 {
+        font-size: 2rem;
+    }
+
+    .header-content-player-profiles h1 i {
+        font-size: 2rem;
+    }
+
+    .profiles-controls-player-profiles {
+        padding: 1.5rem 1rem;
+    }
+
+    .profiles-container-player-profiles {
+        padding: 1.5rem 1rem;
+    }
+
+    .players-grid-player-profiles {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .filters-row-player-profiles {
+        flex-direction: column;
+    }
+
+    .filter-group-player-profiles {
+        width: 100%;
+    }
+
+    .clear-filters-btn-player-profiles {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content-player-profiles h1 {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-box-player-profiles input {
+        padding: 12px 40px 12px 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ==================== PLAYER CARD ==================== */
+.player-card-player-profiles {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.player-card-player-profiles:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 99, 0, 0.2);
+    border-color: var(--accent);
+}
+
+/* Player Image */
+.player-image-container-player-profiles {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.player-image-player-profiles {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.player-card-player-profiles:hover .player-image-player-profiles {
+    transform: scale(1.1);
+}
+
+.player-country-badge-player-profiles {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.flag-player-profiles {
+    font-size: 1.2rem;
+}
+
+.country-player-profiles {
+    color: white;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Player Info */
+.player-info-player-profiles {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.player-name-player-profiles {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.player-meta-player-profiles {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.player-role-player-profiles,
+.player-age-player-profiles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.player-role-player-profiles i,
+.player-age-player-profiles i {
+    color: var(--accent);
+}
+
+/* Player Style */
+.player-style-player-profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.style-item-player-profiles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.style-item-player-profiles i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+/* Quick Stats */
+.player-quick-stats-player-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.stat-item-player-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(255, 99, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 99, 0, 0.2);
+}
+
+.stat-label-player-profiles {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value-player-profiles {
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* View Details Button */
+.view-details-btn-player-profiles {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.view-details-btn-player-profiles:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 0, 0.4);
+}
+
+.view-details-btn-player-profiles i {
+    transition: transform 0.3s;
+}
+
+.player-card-player-profiles:hover .view-details-btn i {
+    transform: translateX(5px);
+}
+
+/* Flag Image in Player Card */
+.flag-image-player-profiles {
+    width: 24px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* image sizing */
+.player-image-container-player-profiles {
+    height: 280px;
+    overflow: hidden;
+}
+
+.player-image-player-profiles {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* flag sizing */
+.flag-image-player-profiles {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+
+/* ============================================
+   FIX: Player Images - Make them FIT instead of FILL
+   ============================================ */
+
+/* Player Card Image Container */
+.player-image-container-player-profiles {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    /* Slightly taller to accommodate fit */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CHANGED: object-fit from 'cover' to 'contain' */
+.player-image-player-profiles {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* ✅ CHANGED: Shows full image without cropping */
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Slight zoom on hover */
+.player-card-player-profiles:hover .player-image-player-profiles {
+    transform: scale(1.05);
+}
+
+/* Player Details Page Image */
+.player-image-large-player-profiles {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-image-large-player-profiles img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Flag Images - Keep these as cover */
+.flag-image-player-profiles {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flag-large-image-player-profiles {
+    width: 48px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+
+@media (max-width: 768px) {
+    .player-image-container-player-profiles {
+        height: 280px;
+    }
+
+    .player-image-large-player-profiles {
+        max-width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .player-image-container-player-profiles {
+        height: 240px;
+    }
+
+    .player-image-large-player-profiles {
+        max-width: 250px;
+        height: 250px;
+    }
+}

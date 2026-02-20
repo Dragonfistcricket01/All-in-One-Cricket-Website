@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* CSS Variables */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f4;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --accent: #ff3300;
+  --accent-hover: #ff5600;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --border-color: #ddd;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #252525;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent: #ff7800;
+  --accent-hover: #ff9a00;
+  --card-bg: #2d2d2d;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --border-color: #3a3a3a;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+/* Import Remix Icons */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css');
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
+
+/* Link Styling */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Button Reset */
+button {
+  font-family: inherit;
+}
+
+/* Body Scrollbar - Light Mode */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  transition: background 0.4s ease;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff3300;
+  border-radius: 6px;
+  transition: background 0.4s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ff5600;
+}
+
+/* Body Scrollbar - Dark Mode */
+body.dark-mode::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+  background: #ff7800;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: #ff9a00;
+}
+
+/* Hide scrollbar when menu is open */
+body.menu-open {
+  overflow: hidden !important;
+}

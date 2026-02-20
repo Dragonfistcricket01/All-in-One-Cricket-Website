@@ -1,0 +1,743 @@
+.fan-club-container {
+    min-height: 100vh;
+    background: var(--body-bg);
+    padding-bottom: 4rem;
+}
+
+.fan-club-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.hero-content-fan {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-title-fan {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle-fan {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-stats-fan {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-item-fan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 150px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.stat-number-fan {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.stat-label-fan {
+    font-size: 1rem;
+    opacity: 0.9;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.tabs-container-fan {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.tab-btn-fan {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn-fan.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.content-wrapper-fan {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* No Results */
+.no-results-fan {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.no-results-icon-fan {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.no-results-fan h3 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.no-results-fan p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Clubs Section */
+.clubs-section-fan .section-header-fan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.clubs-section-fan h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+.search-input-fan {
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #e5e7eb;
+    font-size: 1rem;
+    width: 300px;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.clubs-grid-fan {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.club-card-fan {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.club-card-fan:hover {
+    transform: translateY(-5px);
+}
+
+.club-header-fan {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.club-icon-fan {
+    /*font-size: 4rem;*/
+    /*display: block;*/
+    /*margin-bottom: 1rem;*/
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.club-name-fan {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.club-stats-fan {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--body-bg);
+    border-radius: 10px;
+}
+
+.stat-fan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value-fan {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.stat-label-fan {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.join-btn-fan {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.join-btn-fan:hover {
+    transform: scale(1.05);
+}
+
+/* My Clubs Section */
+.my-clubs-section-fan {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.my-clubs-section-fan h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.my-clubs-list-fan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.my-club-badge-fan {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Discussions Section */
+.discussions-section-fan .section-header-fan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.discussion-filters-fan {
+    display: flex;
+    gap: 1rem;
+}
+
+.filter-select-fan {
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #e5e7eb;
+    font-size: 1rem;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.new-discussion-btn-fan {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.new-discussion-btn-fan:hover {
+    transform: scale(1.05);
+}
+
+.discussions-list-fan {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.discussion-card-fan {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.discussion-card-fan:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.discussion-icon-fan {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.discussion-team-image-fan {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.discussion-content-fan {
+    flex: 1;
+}
+
+.discussion-header-fan {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.5rem;
+}
+
+.discussion-title-fan {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.discussion-category-fan {
+    padding: 0.3rem 0.8rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.discussion-preview-fan {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.discussion-meta-fan {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.discussion-actions-fan {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-btn-fan {
+    padding: 0.5rem 1rem;
+    background: var(--body-bg);
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: all 0.2s;
+}
+
+.action-btn-fan:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.action-btn-fan.liked {
+    background: #ff6b9d;
+    color: white;
+    border-color: #ff6b9d;
+}
+
+/* Activity Section */
+.activity-section-fan h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.activity-feed-fan {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activity-item-fan {
+    display: flex;
+    gap: 1rem;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.activity-avatar-fan {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.activity-content-fan {
+    flex: 1;
+}
+
+.activity-text-fan {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.activity-time-fan {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Modal Styles */
+.modal-overlay-fan {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.modal-content-fan {
+    background: var(--card-bg);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content-fan.large {
+    max-width: 800px;
+}
+
+.modal-header-fan {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.modal-header-fan h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.close-btn-fan {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.close-btn-fan:hover {
+    background: var(--accent);
+    color: white;
+}
+
+.modal-body-fan {
+    padding: 2rem;
+}
+
+/* Discussion Form */
+.discussion-form-fan {
+    padding: 2rem;
+}
+
+.form-group-fan {
+    margin-bottom: 1.5rem;
+}
+
+.form-group-fan label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group-fan input,
+.form-group-fan select,
+.form-group-fan textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--body-bg);
+    color: var(--text-primary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-group-fan textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.form-actions-fan {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cancel-btn-fan {
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.cancel-btn-fan:hover{
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    color: white;
+}
+
+.submit-btn-fan {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Discussion Detail */
+.discussion-full-content-fan {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+/* Comments Section */
+.comments-section-fan {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e7eb;
+}
+
+.comments-section-fan h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.comment-form-fan {
+    margin-bottom: 2rem;
+}
+
+.comment-form-fan textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--body-bg);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.comments-list-fan {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.comment-item-fan {
+    display: flex;
+    gap: 1rem;
+}
+
+.comment-avatar-fan {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.comment-content-fan {
+    flex: 1;
+}
+
+.comment-header-fan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.comment-header-fan strong {
+    color: var(--text-primary);
+}
+
+.comment-time-fan {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.comment-content-fan p {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.comment-like-fan {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    transition: all 0.2s;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.comment-like-fan:hover {
+    background: var(--accent);
+    color: white;
+    border: 2px solid var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title-fan {
+        font-size: 2rem;
+    }
+
+    .hero-stats-fan {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .tabs-container-fan {
+        overflow-x: auto;
+    }
+
+    .clubs-section-fan .section-header-fan,
+    .discussions-section-fan .section-header-fan {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input-fan {
+        width: 100%;
+    }
+
+    .discussion-filters-fan {
+        flex-direction: column;
+    }
+
+    .discussion-card-fan {
+        flex-direction: column;
+    }
+
+    .modal-content-fan {
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
+

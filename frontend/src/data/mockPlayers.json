@@ -1,0 +1,951 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "name": "Virat Kohli",
+      "country": "India",
+      "flag": "src/assets/flag/ind.png",
+      "role": "Batsman",
+      "battingStyle": "Right-handed",
+      "bowlingStyle": "Right-arm medium",
+      "jerseyNumber": 18,
+      "age": 35,
+      "dateOfBirth": "1988-11-05",
+      "image": "src/assets/player_profile/vk18.png",
+      "debut": {
+        "test": "2011-06-20",
+        "odi": "2008-08-18",
+        "t20i": "2010-06-12"
+      },
+      "careerStats": {
+        "test": {
+          "matches": 113,
+          "innings": 197,
+          "runs": 8848,
+          "average": 49.15,
+          "strikeRate": 54.97,
+          "highestScore": "254*",
+          "centuries": 29,
+          "halfCenturies": 30,
+          "fours": 896,
+          "sixes": 23,
+          "notOuts": 11,
+          "ducks": 8,
+          "ballsFaced": 16099,
+          "wickets": 0,
+          "bowlingAverage": 0,
+          "economy": 0,
+          "catches": 115,
+          "stumpings": 0
+        },
+        "odi": {
+          "matches": 292,
+          "innings": 283,
+          "runs": 13848,
+          "average": 58.18,
+          "strikeRate": 93.54,
+          "highestScore": "183",
+          "centuries": 50,
+          "halfCenturies": 72,
+          "fours": 1234,
+          "sixes": 158,
+          "notOuts": 45,
+          "ducks": 6,
+          "ballsFaced": 14802,
+          "wickets": 4,
+          "bowlingAverage": 166.25,
+          "economy": 6.14,
+          "catches": 149,
+          "stumpings": 0
+        },
+        "t20i": {
+          "matches": 125,
+          "innings": 117,
+          "runs": 4188,
+          "average": 52.73,
+          "strikeRate": 137.96,
+          "highestScore": "122*",
+          "centuries": 1,
+          "halfCenturies": 38,
+          "fours": 356,
+          "sixes": 117,
+          "notOuts": 38,
+          "ducks": 1,
+          "ballsFaced": 3035,
+          "wickets": 0,
+          "bowlingAverage": 0,
+          "economy": 0,
+          "catches": 64,
+          "stumpings": 0
+        }
+      },
+      "achievements": [
+        "ICC ODI Player of the Year (2012, 2017, 2018)",
+        "Sir Garfield Sobers Trophy (2017, 2018)",
+        "Wisden Leading Cricketer in the World (2016, 2017, 2018)",
+        "Fastest to 8,000, 9,000, 10,000, 11,000, 12,000, and 13,000 ODI runs",
+        "Most centuries in ODI cricket while chasing (27)",
+        "Most double centuries in Test cricket as captain (7)"
+      ],
+      "milestones": [
+        {
+          "date": "2008-08-18",
+          "title": "ODI Debut",
+          "description": "Made ODI debut against Sri Lanka"
+        },
+        {
+          "date": "2011-06-20",
+          "title": "Test Debut",
+          "description": "Made Test debut against West Indies"
+        },
+        {
+          "date": "2012-12-31",
+          "title": "First ODI Century",
+          "description": "Scored 106 vs Sri Lanka in Hobart"
+        },
+        {
+          "date": "2016-11-17",
+          "title": "Fastest to 25 ODI Centuries",
+          "description": "Reached milestone in 162 innings"
+        },
+        {
+          "date": "2017-10-24",
+          "title": "Became Test Captain",
+          "description": "Appointed as full-time Test captain"
+        },
+        {
+          "date": "2023-11-15",
+          "title": "50 ODI Centuries",
+          "description": "Became first player to score 50 ODI centuries"
+        }
+      ],
+      "recentMatches": [
+        {
+          "date": "2025-10-20",
+          "format": "Test",
+          "opponent": "Australia",
+          "venue": "Melbourne",
+          "score": "87 (145)",
+          "result": "Won by 5 wickets"
+        },
+        {
+          "date": "2025-10-15",
+          "format": "Test",
+          "opponent": "Australia",
+          "venue": "Sydney",
+          "score": "123 (201)",
+          "result": "Drawn"
+        },
+        {
+          "date": "2025-10-10",
+          "format": "ODI",
+          "opponent": "New Zealand",
+          "venue": "Auckland",
+          "score": "95 (98)",
+          "result": "Won by 8 wickets"
+        },
+        {
+          "date": "2025-10-08",
+          "format": "ODI",
+          "opponent": "New Zealand",
+          "venue": "Wellington",
+          "score": "76 (84)",
+          "result": "Lost by 3 runs"
+        },
+        {
+          "date": "2025-10-05",
+          "format": "T20I",
+          "opponent": "South Africa",
+          "venue": "Johannesburg",
+          "score": "45 (32)",
+          "result": "Won by 7 wickets"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Steve Smith",
+      "country": "Australia",
+      "flag": "../assets/flag/aus.png",
+      "role": "Batsman",
+      "battingStyle": "Right-handed",
+      "bowlingStyle": "Right-arm leg spin",
+      "jerseyNumber": 49,
+      "age": 34,
+      "dateOfBirth": "1989-06-02",
+      "image": "/frontend/src/assets/player_profile/ss49.png",
+      "debut": {
+        "test": "2010-07-13",
+        "odi": "2010-02-19",
+        "t20i": "2010-02-06"
+      },
+      "careerStats": {
+        "test": {
+          "matches": 105,
+          "innings": 193,
+          "runs": 9685,
+          "average": 56.97,
+          "strikeRate": 56.06,
+          "highestScore": "239",
+          "centuries": 32,
+          "halfCenturies": 41,
+          "fours": 1086,
+          "sixes": 43,
+          "notOuts": 23,
+          "ducks": 8,
+          "ballsFaced": 17276,
+          "wickets": 17,
+          "bowlingAverage": 54.82,
+          "economy": 3.21,
+          "catches": 197,
+          "stumpings": 0
+        },
+        "odi": {
+          "matches": 155,
+          "innings": 146,
+          "runs": 5082,
+          "average": 44.12,
+          "strikeRate": 87.86,
+          "highestScore": "164",
+          "centuries": 12,
+          "halfCenturies": 29,
+          "fours": 456,
+          "sixes": 86,
+          "notOuts": 31,
+          "ducks": 4,
+          "ballsFaced": 5783,
+          "wickets": 29,
+          "bowlingAverage": 49.55,
+          "economy": 5.42,
+          "catches": 74,
+          "stumpings": 0
+        },
+        "t20i": {
+          "matches": 67,
+          "innings": 62,
+          "runs": 1093,
+          "average": 27.32,
+          "strikeRate": 128.76,
+          "highestScore": "90",
+          "centuries": 0,
+          "halfCenturies": 7,
+          "fours": 85,
+          "sixes": 38,
+          "notOuts": 22,
+          "ducks": 2,
+          "ballsFaced": 849,
+          "wickets": 8,
+          "bowlingAverage": 28.25,
+          "economy": 7.32,
+          "catches": 28,
+          "stumpings": 0
+        }
+      },
+      "achievements": [
+        "ICC Test Player of the Year (2015, 2017)",
+        "Allan Border Medal (2015, 2018, 2021)",
+        "Wisden Leading Cricketer in the World (2015)",
+        "Fastest Australian to 7,000 Test runs",
+        "Third-fastest to 27 Test centuries",
+        "Most runs in a Test series (769 in 2019 Ashes)"
+      ],
+      "milestones": [
+        {
+          "date": "2010-02-06",
+          "title": "T20I Debut",
+          "description": "Made T20I debut against Pakistan"
+        },
+        {
+          "date": "2010-07-13",
+          "title": "Test Debut",
+          "description": "Made Test debut against Pakistan"
+        },
+        {
+          "date": "2013-12-03",
+          "title": "First Test Century",
+          "description": "Scored 115 vs England in Brisbane"
+        },
+        {
+          "date": "2015-03-22",
+          "title": "No.1 Test Ranking",
+          "description": "Became world's No.1 Test batsman"
+        },
+        {
+          "date": "2019-09-12",
+          "title": "Record Ashes Series",
+          "description": "Scored 774 runs in 2019 Ashes"
+        }
+      ],
+      "recentMatches": [
+        {
+          "date": "2025-10-20",
+          "format": "Test",
+          "opponent": "India",
+          "venue": "Melbourne",
+          "score": "145 (276)",
+          "result": "Lost by 5 wickets"
+        },
+        {
+          "date": "2025-10-15",
+          "format": "Test",
+          "opponent": "India",
+          "venue": "Sydney",
+          "score": "91 (198)",
+          "result": "Drawn"
+        },
+        {
+          "date": "2025-10-10",
+          "format": "ODI",
+          "opponent": "England",
+          "venue": "Lord's",
+          "score": "78 (95)",
+          "result": "Won by 6 wickets"
+        },
+        {
+          "date": "2025-10-08",
+          "format": "ODI",
+          "opponent": "England",
+          "venue": "The Oval",
+          "score": "112 (128)",
+          "result": "Won by 4 wickets"
+        },
+        {
+          "date": "2025-10-05",
+          "format": "T20I",
+          "opponent": "Pakistan",
+          "venue": "Dubai",
+          "score": "52 (38)",
+          "result": "Lost by 2 wickets"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "flag": "../assets/flag/nz.png",
+      "role": "Batsman",
+      "battingStyle": "Right-handed",
+      "bowlingStyle": "Right-arm off break",
+      "jerseyNumber": 22,
+      "age": 34,
+      "dateOfBirth": "1990-08-08",
+      "image": "../assets/player_profile/kw22.png",
+      "debut": {
+        "test": "2010-11-24",
+        "odi": "2010-08-10",
+        "t20i": "2011-02-25"
+      },
+      "careerStats": {
+        "test": {
+          "matches": 98,
+          "innings": 179,
+          "runs": 8743,
+          "average": 54.33,
+          "strikeRate": 51.42,
+          "highestScore": "251",
+          "centuries": 32,
+          "halfCenturies": 34,
+          "fours": 1012,
+          "sixes": 22,
+          "notOuts": 18,
+          "ducks": 7,
+          "ballsFaced": 17003,
+          "wickets": 2,
+          "bowlingAverage": 108.00,
+          "economy": 4.05,
+          "catches": 141,
+          "stumpings": 0
+        },
+        "odi": {
+          "matches": 169,
+          "innings": 161,
+          "runs": 6949,
+          "average": 47.58,
+          "strikeRate": 82.21,
+          "highestScore": "148",
+          "centuries": 16,
+          "halfCenturies": 42,
+          "fours": 641,
+          "sixes": 93,
+          "notOuts": 15,
+          "ducks": 4,
+          "ballsFaced": 8453,
+          "wickets": 37,
+          "bowlingAverage": 36.43,
+          "economy": 5.13,
+          "catches": 95,
+          "stumpings": 0
+        },
+        "t20i": {
+          "matches": 98,
+          "innings": 91,
+          "runs": 2369,
+          "average": 32.60,
+          "strikeRate": 127.72,
+          "highestScore": "95",
+          "centuries": 0,
+          "halfCenturies": 18,
+          "fours": 212,
+          "sixes": 68,
+          "notOuts": 18,
+          "ducks": 3,
+          "ballsFaced": 1855,
+          "wickets": 12,
+          "bowlingAverage": 32.41,
+          "economy": 7.45,
+          "catches": 51,
+          "stumpings": 0
+        }
+      },
+      "achievements": [
+        "ICC Spirit of Cricket Award (2019)",
+        "New Zealand Player of the Year (2015, 2020)",
+        "Sir Richard Hadlee Medal (2013, 2015, 2016, 2020)",
+        "Led New Zealand to first ICC final (2019 World Cup)",
+        "Led New Zealand to first WTC final (2021)",
+        "Fastest New Zealander to 1,000, 2,000, and 3,000 Test runs"
+      ],
+      "milestones": [
+        {
+          "date": "2010-08-10",
+          "title": "ODI Debut",
+          "description": "Made ODI debut against India"
+        },
+        {
+          "date": "2010-11-24",
+          "title": "Test Debut",
+          "description": "Made Test debut against India"
+        },
+        {
+          "date": "2014-03-30",
+          "title": "First Test Double Century",
+          "description": "Scored 242* vs Sri Lanka"
+        },
+        {
+          "date": "2019-07-14",
+          "title": "World Cup Final Captain",
+          "description": "Led NZ to World Cup final"
+        },
+        {
+          "date": "2021-06-18",
+          "title": "WTC Final Captain",
+          "description": "Led NZ to first WTC title"
+        }
+      ],
+      "recentMatches": [
+        {
+          "date": "2025-10-18",
+          "format": "Test",
+          "opponent": "England",
+          "venue": "Lord's",
+          "score": "134 (245)",
+          "result": "Won by 8 wickets"
+        },
+        {
+          "date": "2025-10-12",
+          "format": "ODI",
+          "opponent": "India",
+          "venue": "Mumbai",
+          "score": "89 (102)",
+          "result": "Lost by 5 wickets"
+        },
+        {
+          "date": "2025-10-10",
+          "format": "ODI",
+          "opponent": "India",
+          "venue": "Delhi",
+          "score": "108 (118)",
+          "result": "Won by 3 wickets"
+        },
+        {
+          "date": "2025-10-07",
+          "format": "T20I",
+          "opponent": "Bangladesh",
+          "venue": "Dhaka",
+          "score": "67 (42)",
+          "result": "Won by 7 wickets"
+        },
+        {
+          "date": "2025-10-05",
+          "format": "T20I",
+          "opponent": "Bangladesh",
+          "venue": "Chittagong",
+          "score": "45 (35)",
+          "result": "Lost by 2 runs"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "flag": "../assets/flag/pak.png",
+      "role": "Batsman",
+      "battingStyle": "Right-handed",
+      "bowlingStyle": "Right-arm off break",
+      "jerseyNumber": 56,
+      "age": 30,
+      "dateOfBirth": "1994-10-15",
+      "image": "../assets/player_profile/ba56.png",
+      "debut": {
+        "test": "2016-10-13",
+        "odi": "2015-05-31",
+        "t20i": "2016-09-01"
+      },
+      "careerStats": {
+        "test": {
+          "matches": 56,
+          "innings": 98,
+          "runs": 4276,
+          "average": 45.01,
+          "strikeRate": 53.78,
+          "highestScore": "196",
+          "centuries": 10,
+          "halfCenturies": 27,
+          "fours": 512,
+          "sixes": 12,
+          "notOuts": 3,
+          "ducks": 3,
+          "ballsFaced": 7950,
+          "wickets": 0,
+          "bowlingAverage": 0,
+          "economy": 0,
+          "catches": 48,
+          "stumpings": 0
+        },
+        "odi": {
+          "matches": 119,
+          "innings": 115,
+          "runs": 5729,
+          "average": 56.42,
+          "strikeRate": 88.52,
+          "highestScore": "158",
+          "centuries": 19,
+          "halfCenturies": 31,
+          "fours": 542,
+          "sixes": 73,
+          "notOuts": 14,
+          "ducks": 1,
+          "ballsFaced": 6472,
+          "wickets": 0,
+          "bowlingAverage": 0,
+          "economy": 0,
+          "catches": 51,
+          "stumpings": 0
+        },
+        "t20i": {
+          "matches": 122,
+          "innings": 118,
+          "runs": 4192,
+          "average": 41.50,
+          "strikeRate": 129.43,
+          "highestScore": "122",
+          "centuries": 3,
+          "halfCenturies": 33,
+          "fours": 341,
+          "sixes": 94,
+          "notOuts": 17,
+          "ducks": 2,
+          "ballsFaced": 3238,
+          "wickets": 0,
+          "bowlingAverage": 0,
+          "economy": 0,
+          "catches": 57,
+          "stumpings": 0
+        }
+      },
+      "achievements": [
+        "ICC ODI Player of the Year (2022)",
+        "Fastest to 1,000, 2,000, 3,000, 4,000, and 5,000 ODI runs as captain",
+        "No.1 ranked ODI batsman (2021-2023)",
+        "No.1 ranked T20I batsman (2021-2022)",
+        "Most centuries in T20I cricket (3)",
+        "Pakistan's all-time leading run-scorer in T20Is"
+      ],
+      "milestones": [
+        {
+          "date": "2015-05-31",
+          "title": "ODI Debut",
+          "description": "Made ODI debut against Zimbabwe"
+        },
+        {
+          "date": "2016-10-13",
+          "title": "Test Debut",
+          "description": "Made Test debut against West Indies"
+        },
+        {
+          "date": "2019-05-24",
+          "title": "Appointed ODI Captain",
+          "description": "Became Pakistan's ODI captain"
+        },
+        {
+          "date": "2021-04-07",
+          "title": "No.1 ODI Ranking",
+          "description": "Became world's No.1 ODI batsman"
+        },
+        {
+          "date": "2022-12-18",
+          "title": "5000 ODI Runs",
+          "description": "Fastest captain to 5000 ODI runs"
+        }
+      ],
+      "recentMatches": [
+        {
+          "date": "2025-10-19",
+          "format": "Test",
+          "opponent": "South Africa",
+          "venue": "Karachi",
+          "score": "102 (189)",
+          "result": "Drawn"
+        },
+        {
+          "date": "2025-10-14",
+          "format": "ODI",
+          "opponent": "Australia",
+          "venue": "Lahore",
+          "score": "92 (98)",
+          "result": "Lost by 4 wickets"
+        },
+        {
+          "date": "2025-10-12",
+          "format": "ODI",
+          "opponent": "Australia",
+          "venue": "Rawalpindi",
+          "score": "114 (107)",
+          "result": "Won by 6 wickets"
+        },
+        {
+          "date": "2025-10-09",
+          "format": "T20I",
+          "opponent": "Sri Lanka",
+          "venue": "Colombo",
+          "score": "68 (48)",
+          "result": "Won by 5 wickets"
+        },
+        {
+          "date": "2025-10-07",
+          "format": "T20I",
+          "opponent": "Sri Lanka",
+          "venue": "Kandy",
+          "score": "55 (41)",
+          "result": "Lost by 1 run"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Joe Root",
+      "country": "England",
+      "flag": "../assets/flag/eng.png",
+      "role": "Batsman",
+      "battingStyle": "Right-handed",
+      "bowlingStyle": "Right-arm off break",
+      "jerseyNumber": 66,
+      "age": 34,
+      "dateOfBirth": "1990-12-30",
+      "image": "../assets/player_profile/jr03.png",
+      "debut": {
+        "test": "2012-12-13",
+        "odi": "2013-01-11",
+        "t20i": "2012-06-25"
+      },
+      "careerStats": {
+        "test": {
+          "matches": 147,
+          "innings": 268,
+          "runs": 12377,
+          "average": 49.70,
+          "strikeRate": 54.42,
+          "highestScore": "254",
+          "centuries": 33,
+          "halfCenturies": 64,
+          "fours": 1423,
+          "sixes": 48,
+          "notOuts": 19,
+          "ducks": 12,
+          "ballsFaced": 22741,
+          "wickets": 52,
+          "bowlingAverage": 45.90,
+          "economy": 3.15,
+          "catches": 185,
+          "stumpings": 0
+        },
+        "odi": {
+          "matches": 171,
+          "innings": 159,
+          "runs": 6491,
+          "average": 47.36,
+          "strikeRate": 86.46,
+          "highestScore": "133*",
+          "centuries": 16,
+          "halfCenturies": 37,
+          "fours": 556,
+          "sixes": 86,
+          "notOuts": 22,
+          "ducks": 3,
+          "ballsFaced": 7508,
+          "wickets": 28,
+          "bowlingAverage": 52.03,
+          "economy": 5.45,
+          "catches": 75,
+          "stumpings": 0
+        },
+        "t20i": {
+          "matches": 32,
+          "innings": 28,
+          "runs": 893,
+          "average": 35.72,
+          "strikeRate": 126.16,
+          "highestScore": "90*",
+          "centuries": 0,
+          "halfCenturies": 5,
+          "fours": 72,
+          "sixes": 26,
+          "notOuts": 3,
+          "ducks": 1,
+          "ballsFaced": 708,
+          "wickets": 5,
+          "bowlingAverage": 38.60,
+          "economy": 7.72,
+          "catches": 15,
+          "stumpings": 0
+        }
+      },
+      "achievements": [
+        "England's second-highest Test run-scorer",
+        "Most Test centuries by an England batsman (33)",
+        "Wisden Cricketer of the Year (2014)",
+        "PCA Player of the Year (2021)",
+        "Most runs in Test cricket in 2021 (1708)",
+        "Fastest Englishman to 10,000 Test runs"
+      ],
+      "milestones": [
+        {
+          "date": "2012-12-13",
+          "title": "Test Debut",
+          "description": "Made Test debut against India"
+        },
+        {
+          "date": "2013-05-16",
+          "title": "First Test Century",
+          "description": "Scored 104 vs New Zealand at Headingley"
+        },
+        {
+          "date": "2017-02-09",
+          "title": "Appointed Test Captain",
+          "description": "Became England's Test captain"
+        },
+        {
+          "date": "2021-09-08",
+          "title": "10,000 Test Runs",
+          "description": "Became 14th player to reach milestone"
+        },
+        {
+          "date": "2023-07-20",
+          "title": "12,000 Test Runs",
+          "description": "7th player to reach 12,000 Test runs"
+        }
+      ],
+      "recentMatches": [
+        {
+          "date": "2025-10-18",
+          "format": "Test",
+          "opponent": "New Zealand",
+          "venue": "Lord's",
+          "score": "156 (287)",
+          "result": "Lost by 8 wickets"
+        },
+        {
+          "date": "2025-10-13",
+          "format": "ODI",
+          "opponent": "Australia",
+          "venue": "The Oval",
+          "score": "95 (112)",
+          "result": "Lost by 4 wickets"
+        },
+        {
+          "date": "2025-10-10",
+          "format": "ODI",
+          "opponent": "Australia",
+          "venue": "Lord's",
+          "score": "118 (125)",
+          "result": "Won by 6 wickets"
+        },
+        {
+          "date": "2025-10-08",
+          "format": "T20I",
+          "opponent": "South Africa",
+          "venue": "Cape Town",
+          "score": "62 (45)",
+          "result": "Won by 7 wickets"
+        },
+        {
+          "date": "2025-10-06",
+          "format": "T20I",
+          "opponent": "South Africa",
+          "venue": "Durban",
+          "score": "38 (31)",
+          "result": "Lost by 3 wickets"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Rohit Sharma",
+      "country": "India",
+      "flag": "../assets/flag/ind.png",
+      "role": "Batsman",
+      "battingStyle": "Right-handed",
+      "bowlingStyle": "Right-arm off break",
+      "jerseyNumber": 45,
+      "age": 37,
+      "dateOfBirth": "1987-04-30",
+      "image": "../assets/player_profile/rs45.png",
+      "debut": {
+        "test": "2013-11-06",
+        "odi": "2007-06-23",
+        "t20i": "2007-09-19"
+      },
+      "careerStats": {
+        "test": {
+          "matches": 63,
+          "innings": 112,
+          "runs": 4301,
+          "average": 43.01,
+          "strikeRate": 55.88,
+          "highestScore": "212",
+          "centuries": 11,
+          "halfCenturies": 17,
+          "fours": 518,
+          "sixes": 41,
+          "notOuts": 12,
+          "ducks": 7,
+          "ballsFaced": 7697,
+          "wickets": 2,
+          "bowlingAverage": 43.00,
+          "economy": 3.82,
+          "catches": 71,
+          "stumpings": 0
+        },
+        "odi": {
+          "matches": 262,
+          "innings": 252,
+          "runs": 10866,
+          "average": 49.16,
+          "strikeRate": 90.30,
+          "highestScore": "264",
+          "centuries": 31,
+          "halfCenturies": 56,
+          "fours": 1005,
+          "sixes": 331,
+          "notOuts": 31,
+          "ducks": 5,
+          "ballsFaced": 12030,
+          "wickets": 8,
+          "bowlingAverage": 60.62,
+          "economy": 5.49,
+          "catches": 93,
+          "stumpings": 0
+        },
+        "t20i": {
+          "matches": 159,
+          "innings": 151,
+          "runs": 4231,
+          "average": 32.31,
+          "strikeRate": 140.35,
+          "highestScore": "121*",
+          "centuries": 5,
+          "halfCenturies": 29,
+          "fours": 326,
+          "sixes": 190,
+          "notOuts": 20,
+          "ducks": 4,
+          "ballsFaced": 3014,
+          "wickets": 0,
+          "bowlingAverage": 0,
+          "economy": 0,
+          "catches": 62,
+          "stumpings": 0
+        }
+      },
+      "achievements": [
+        "Only player with 3 ODI double centuries",
+        "Highest individual score in ODIs (264)",
+        "Most T20I centuries (5)",
+        "Most sixes in international cricket (675+)",
+        "ICC ODI Player of the Year (2019)",
+        "Led India to 2024 T20 World Cup victory"
+      ],
+      "milestones": [
+        {
+          "date": "2007-06-23",
+          "title": "ODI Debut",
+          "description": "Made ODI debut against Ireland"
+        },
+        {
+          "date": "2013-11-06",
+          "title": "Test Debut",
+          "description": "Made Test debut against West Indies"
+        },
+        {
+          "date": "2013-11-02",
+          "title": "First ODI Double Century",
+          "description": "Scored 209 vs Australia"
+        },
+        {
+          "date": "2019-06-05",
+          "title": "Appointed T20I Captain",
+          "description": "Became India's T20I captain"
+        },
+        {
+          "date": "2024-06-29",
+          "title": "T20 World Cup Victory",
+          "description": "Led India to T20 World Cup title"
+        }
+      ],
+      "recentMatches": [
+        {
+          "date": "2025-10-20",
+          "format": "Test",
+          "opponent": "Australia",
+          "venue": "Melbourne",
+          "score": "76 (132)",
+          "result": "Won by 5 wickets"
+        },
+        {
+          "date": "2025-10-15",
+          "format": "Test",
+          "opponent": "Australia",
+          "venue": "Sydney",
+          "score": "45 (98)",
+          "result": "Drawn"
+        },
+        {
+          "date": "2025-10-10",
+          "format": "ODI",
+          "opponent": "New Zealand",
+          "venue": "Auckland",
+          "score": "128 (110)",
+          "result": "Won by 8 wickets"
+        },
+        {
+          "date": "2025-10-08",
+          "format": "ODI",
+          "opponent": "New Zealand",
+          "venue": "Wellington",
+          "score": "89 (95)",
+          "result": "Lost by 3 runs"
+        },
+        {
+          "date": "2025-10-05",
+          "format": "T20I",
+          "opponent": "South Africa",
+          "venue": "Johannesburg",
+          "score": "72 (41)",
+          "result": "Won by 7 wickets"
+        }
+      ]
+    }
+  ]
+}

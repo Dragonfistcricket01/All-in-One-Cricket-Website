@@ -1,0 +1,167 @@
+/* ==================== CAREER TIMELINE ==================== */
+.career-timeline-player-profiles {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.career-timeline-player-profiles h2 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.career-timeline-player-profiles h2 i {
+    color: var(--accent);
+}
+
+.timeline-subtitle-player-profiles {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin: 0 0 2rem 0;
+}
+
+/* Timeline Container */
+.timeline-container-player-profiles {
+    position: relative;
+    padding: 1rem 0;
+}
+
+/* Timeline Item */
+.timeline-item-player-profiles {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item-player-profiles:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Marker */
+.timeline-marker-player-profiles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marker-dot-player-profiles {
+    width: 24px;
+    height: 24px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 4px solid var(--card-bg);
+    box-shadow: 0 0 0 4px rgba(255, 99, 0, 0.2);
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.timeline-item-player-profiles:hover .marker-dot-player-profiles {
+    transform: scale(1.3);
+    box-shadow: 0 0 0 6px rgba(255, 99, 0, 0.3);
+}
+
+.marker-line-player-profiles {
+    width: 3px;
+    flex: 1;
+    background: linear-gradient(180deg, var(--accent) 0%, rgba(255, 99, 0, 0.3) 100%);
+    margin-top: 0.5rem;
+}
+
+/* Timeline Content */
+.timeline-content-player-profiles {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item-player-profiles:hover .timeline-content-player-profiles {
+    background: rgba(255, 99, 0, 0.05);
+    border-color: rgba(255, 99, 0, 0.3);
+    transform: translateX(5px);
+}
+
+.timeline-date-player-profiles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-date-player-profiles i {
+    font-size: 1rem;
+    color: var(--accent);
+}
+
+.timeline-title-player-profiles {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.timeline-description-player-profiles {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .career-timeline-player-profiles {
+        padding: 1.5rem;
+    }
+
+    .timeline-item-player-profiles {
+        grid-template-columns: 40px 1fr;
+        gap: 1rem;
+    }
+
+    .marker-dot-player-profiles {
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeline-content-player-profiles {
+        padding: 1.25rem;
+    }
+
+    .timeline-title-player-profiles {
+        font-size: 1.1rem;
+    }
+
+    .timeline-description-player-profiles {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .career-timeline-player-profiles h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-item-player-profiles {
+        grid-template-columns: 30px 1fr;
+        gap: 0.75rem;
+    }
+
+    .marker-dot-player-profiles {
+        width: 16px;
+        height: 16px;
+        border: 3px solid var(--card-bg);
+    }
+}

@@ -1,0 +1,1357 @@
+/* Force display fix */
+.team-rankings-page {
+    display: block !important;
+    overflow-y: auto !important;
+    min-height: 100vh;
+}
+
+.rankings-main-team-rankings {
+    display: block !important;
+    width: 100%;
+}
+
+.rankings-grid-team-rankings {
+    display: grid !important;
+    visibility: visible !important;
+}
+
+/* ==================== TEAM RANKINGS PAGE ==================== */
+.team-rankings-page {
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+/* Hero Section */
+.rankings-hero-team-rankings {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content-team-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-text-team-rankings {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-text-team-rankings h1 {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-text-team-rankings h1 i {
+    color: var(--accent);
+}
+
+.hero-text-team-rankings p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.hero-stats-team-rankings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-card-team-rankings {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+}
+
+.stat-card-team-rankings:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+}
+
+.stat-card-team-rankings i {
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+.stat-value-team-rankings {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.stat-label-team-rankings {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Format Filter */
+.format-filter-team-rankings {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.format-filter-container-team-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.format-btn-team-rankings {
+    padding: 1.25rem 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.format-btn-team-rankings i {
+    font-size: 1.5rem;
+}
+
+.format-btn-team-rankings:hover {
+    border-color: var(--format-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.format-btn-team-rankings.active {
+    background: var(--format-color);
+    border-color: var(--format-color);
+    color: white;
+}
+
+.format-btn-team-rankings.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Comparison Bar */
+.comparison-bar-team-rankings {
+    max-width: 1400px;
+    margin: 0 auto 2rem;
+    padding: 0 2rem;
+}
+
+.comparison-content-team-rankings {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.comparison-header-team-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.comparison-header-team-rankings i {
+    font-size: 1.5rem;
+}
+
+.compared-teams-team-rankings {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.compared-team-badge-team-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.team-flag-small-team-rankings {
+    font-size: 1.2rem;
+}
+
+.comparison-actions-team-rankings {
+    display: flex;
+    gap: 1rem;
+}
+
+.view-comparison-btn-team-rankings {
+    padding: 0.75rem 1.5rem;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    color: #3b82f6;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-comparison-btn-team-rankings:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.clear-comparison-btn-team-rankings {
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-comparison-btn-team-rankings:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Controls Section */
+.rankings-controls-team-rankings {
+    max-width: 1400px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.controls-container-team-rankings {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-box-team-rankings {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box-team-rankings i {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+}
+
+.search-box-team-rankings input {
+    width: 100%;
+    padding: 1.2rem 1.5rem 1.2rem 4rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-box-team-rankings input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 99, 0, 0.1);
+}
+
+.clear-search-team-rankings {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 99, 0, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--accent);
+    transition: all 0.3s;
+}
+
+.clear-search-team-rankings:hover {
+    background: var(--accent);
+    color: white;
+}
+
+.sort-section-team-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sort-section-team-rankings label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.sort-section-team-rankings select {
+    padding: 1rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 180px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sort-section-team-rankings select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.results-info-team-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 0.5rem;
+}
+
+.results-count-team-rankings {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.format-indicator-team-rankings {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Rankings Grid */
+.rankings-main-team-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+    min-height: 50vh;
+}
+
+.rankings-grid-team-rankings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Team Ranking Card */
+.team-ranking-card {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-ranking-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #ff6300, #ff3300);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.team-ranking-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border-color: #ff6300;
+}
+
+.team-ranking-card:hover::before {
+    opacity: 1;
+}
+
+/* Rank Badge */
+.rank-badge-team-rankings {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.rank-number-team-rankings {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff6300, #ff3300);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.rank-change-team-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.rank-change-team-rankings.up {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.rank-change-team-rankings.down {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+/* Team Info */
+.team-info-team-rankings {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-right: 60px;
+}
+
+.team-flag-name-team-rankings {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team-flag-team-rankings {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.team-name-team-rankings {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.team-country-team-rankings {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.team-actions-team-rankings {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-icon-btn-team-rankings {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-icon-btn-team-rankings:hover {
+    transform: scale(1.1);
+}
+
+.action-icon-btn-team-rankings.favorite:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.action-icon-btn-team-rankings.favorite.active {
+    background: #ef4444;
+    border-color: #ef4444;
+    color: white;
+}
+
+.action-icon-btn-team-rankings.compare:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.action-icon-btn-team-rankings.compare.active {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+    cursor: not-allowed;
+}
+
+/* Rating Section */
+.team-rating-section-team-rankings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.rating-box-team-rankings,
+.points-box-team-rankings {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.rating-label-team-rankings,
+.points-label-team-rankings {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating-value-team-rankings {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.points-value-team-rankings {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Stats Grid */
+.team-stats-grid-team-rankings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-item-team-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-value-team-rankings.won {
+    color: #10b981;
+}
+
+.stat-value-team-rankings.lost {
+    color: #ef4444;
+}
+
+.stat-value-team-rankings.drawn {
+    color: #f59e0b;
+}
+
+.stat-value-team-rankings.tied {
+    color: #3b82f6;
+}
+
+/* Recent Form */
+.recent-form-team-rankings {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.form-label-team-rankings {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.form-indicators-team-rankings {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.form-indicator-team-rankings {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.form-indicator-team-rankings:hover {
+    transform: scale(1.2);
+}
+
+/* No Results */
+.no-results-team-rankings {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-secondary);
+}
+
+.no-results-team-rankings i {
+    font-size: 4rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.no-results-team-rankings h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.reset-btn-team-rankings {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #ff6300, #ff3300);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.reset-btn-team-rankings:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 0, 0.4);
+}
+
+/* Last Updated */
+.last-updated-team-rankings {
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.last-updated-team-rankings i {
+    color: var(--accent);
+}
+
+/* Loading */
+.loading-container-team-rankings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    color: var(--text-secondary);
+}
+
+.spinner {
+    font-size: 3rem;
+    color: var(--accent);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==================== VIEW TOGGLE ==================== */
+.view-toggle-team-rankings {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle-btn-team-rankings {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.view-toggle-btn-team-rankings:hover {
+    color: var(--accent);
+    background: rgba(255, 99, 0, 0.1);
+}
+
+.view-toggle-btn-team-rankings.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.view-toggle-btn-team-rankings i {
+    font-size: 1.2rem;
+}
+
+/* ==================== TABLE VIEW (ESPN/ICC STYLE) ==================== */
+.rankings-table-container-team-rankings {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.rankings-table-team-rankings {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rankings-table-team-rankings thead {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.rankings-table-team-rankings thead tr {
+    border-bottom: 3px solid var(--accent);
+}
+
+.rankings-table-team-rankings th {
+    padding: 1.5rem 1rem;
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rankings-table-team-rankings th:first-child {
+    padding-left: 2rem;
+    text-align: center;
+    width: 80px;
+}
+
+.rankings-table-team-rankings tbody tr {
+    border-bottom: 3px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.rankings-table-team-rankings tbody tr:hover {
+    background: rgba(255, 99, 0, 0.05);
+    transform: translateX(5px);
+}
+
+.rankings-table-team-rankings tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table-row-clickable-team-rankings {
+    cursor: pointer;
+}
+
+.rankings-table-team-rankings td {
+    padding: 1.5rem 1rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.rankings-table-team-rankings td:first-child {
+    padding-left: 2rem;
+}
+
+/* Rank Cell */
+.rank-cell-team-rankings {
+    text-align: center;
+}
+
+.rank-display-team-rankings {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #ff6300, #ff3300);
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Team Cell */
+.team-cell-team-rankings {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.table-team-flag-team-rankings {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.table-team-name-team-rankings {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.table-team-flag-team-rankings,
+.team-flag-team-rankings,
+.comparison-team-flag-team-rankings {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Rating Cell */
+.rating-cell-team-rankings {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* PCT Cell (for WTC) */
+.pct-cell-team-rankings {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* ==================== COMPARISON MODAL ==================== */
+.comparison-modal-overlay-team-rankings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 2rem;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.comparison-modal-team-rankings {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.comparison-modal-header-team-rankings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 2px solid var(--border-color);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.comparison-modal-header-team-rankings h2 {
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.comparison-modal-header-team-rankings h2 i {
+    color: #ff6300;
+    font-size: 2rem;
+}
+
+.close-modal-btn-team-rankings {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.close-modal-btn-team-rankings:hover {
+    background: #ef4444;
+    border-color: #ef4444;
+    transform: rotate(90deg);
+}
+
+.comparison-modal-content-team-rankings {
+    padding: 2rem;
+}
+
+.comparison-teams-grid-team-rankings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.comparison-team-column-team-rankings {
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.comparison-team-column-team-rankings:hover {
+    border-color: #ff6300;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 99, 0, 0.2);
+}
+
+.comparison-team-header-team-rankings {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #ff6300;
+}
+
+.comparison-team-flag-team-rankings {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.comparison-team-header-team-rankings h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.comparison-rank-team-rankings {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: #ff6300;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.comparison-stats-list-team-rankings {
+    padding: 1.5rem;
+}
+
+.comparison-stat-row-team-rankings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.comparison-stat-row-team-rankings:last-child {
+    border-bottom: none;
+}
+
+.comparison-stat-row-team-rankings:hover {
+    background: rgba(255, 99, 0, 0.05);
+}
+
+.comparison-stat-row-team-rankings .stat-label-team-rankings {
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.comparison-stat-row-team-rankings .stat-value-team-rankings {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.comparison-stat-row-team-rankings .stat-value-team-rankings.highlight {
+    color: #ff6300;
+    font-size: 1.3rem;
+}
+
+.comparison-stat-row-team-rankings .stat-value-team-rankings.success {
+    color: #10b981;
+}
+
+.comparison-stat-row-team-rankings .stat-value-team-rankings.danger {
+    color: #ef4444;
+}
+
+.comparison-stat-row-team-rankings .stat-value-team-rankings.warning {
+    color: #f59e0b;
+}
+
+.comparison-stat-row-team-rankings .stat-value-team-rankings.info {
+    color: #3b82f6;
+}
+
+/* ==================== RESPONSIVE UPDATES ==================== */
+@media (max-width: 1200px) {
+
+    .rankings-table-team-rankings th,
+    .rankings-table-team-rankings td {
+        padding: 1rem 0.75rem;
+    }
+
+    .rankings-table-team-rankings th:first-child,
+    .rankings-table-team-rankings td:first-child {
+        padding-left: 1rem;
+    }
+
+    .comparison-teams-grid-team-rankings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .view-toggle-team-rankings {
+        width: 100%;
+    }
+
+    .view-toggle-btn-team-rankings {
+        flex: 1;
+        justify-content: center;
+    }
+
+    /* Make table scrollable on mobile */
+    .rankings-table-container-team-rankings {
+        overflow-x: auto;
+    }
+
+    .rankings-table-team-rankings {
+        min-width: 600px;
+    }
+
+    .rankings-table-team-rankings th,
+    .rankings-table-team-rankings td {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .rank-display-team-rankings {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .table-team-flag-team-rankings {
+        font-size: 1.5rem;
+    }
+
+    .table-team-name-team-rankings {
+        font-size: 0.95rem;
+    }
+
+    /* Comparison Modal Mobile */
+    .comparison-modal-overlay-team-rankings {
+        padding: 1rem;
+    }
+
+    .comparison-modal-team-rankings {
+        max-height: 85vh;
+    }
+
+    .comparison-modal-header-team-rankings {
+        padding: 1.5rem;
+    }
+
+    .comparison-modal-header-team-rankings h2 {
+        font-size: 1.3rem;
+    }
+
+    .close-modal-btn-team-rankings {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .comparison-modal-content-team-rankings {
+        padding: 1rem;
+    }
+
+    .comparison-teams-grid-team-rankings {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .comparison-team-header-team-rankings {
+        padding: 1rem;
+    }
+
+    .comparison-team-flag-team-rankings {
+        font-size: 2.5rem;
+    }
+
+    .comparison-team-header-team-rankings h3 {
+        font-size: 1.1rem;
+    }
+
+    .comparison-stats-list-team-rankings {
+        padding: 1rem;
+    }
+
+    .comparison-stat-row-team-rankings {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .rankings-table-team-rankings th:first-child,
+    .rankings-table-team-rankings td:first-child {
+        padding-left: 0.5rem;
+    }
+
+    .rank-display-team-rankings {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .table-team-flag-team-rankings {
+        font-size: 1.2rem;
+    }
+
+    .table-team-name-team-rankings {
+        font-size: 0.85rem;
+    }
+
+    .comparison-stat-row-team-rankings .stat-value-team-rankings {
+        font-size: 1rem;
+    }
+
+    .comparison-stat-row-team-rankings .stat-value-team-rankings.highlight {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .rankings-grid-team-rankings {
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text-team-rankings h1 {
+        font-size: 2rem;
+    }
+
+    .hero-stats-team-rankings {
+        grid-template-columns: 1fr;
+    }
+
+    .format-filter-container-team-rankings {
+        flex-direction: column;
+    }
+
+    .format-btn-team-rankings {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .comparison-content-team-rankings {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .comparison-header-team-rankings {
+        justify-content: center;
+    }
+
+    .compared-teams-team-rankings {
+        justify-content: center;
+    }
+
+    .comparison-actions-team-rankings {
+        justify-content: center;
+    }
+
+    .controls-container-team-rankings {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box-team-rankings {
+        min-width: 100%;
+    }
+
+    .sort-section-team-rankings {
+        width: 100%;
+    }
+
+    .sort-section-team-rankings select {
+        width: 100%;
+    }
+
+    .rankings-grid-team-rankings {
+        grid-template-columns: 1fr;
+    }
+
+    .team-stats-grid-team-rankings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-info-team-rankings {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .team-actions-team-rankings {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .rank-badge-team-rankings {
+        position: static;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-flag-team-rankings {
+        font-size: 2rem;
+    }
+
+    .team-name-team-rankings {
+        font-size: 1.2rem;
+    }
+
+    .rating-value-team-rankings {
+        font-size: 1.5rem;
+    }
+
+    .points-value-team-rankings {
+        font-size: 1.2rem;
+    }
+}

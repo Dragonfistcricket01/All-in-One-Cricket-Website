@@ -1,0 +1,801 @@
+.pitch-predictor-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.pitch-predictor-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pitch-predictor-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pitch-predictor-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Main Content */
+.pitch-predictor-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Input Section */
+.pitch-input-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pitch-input-section h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #10b981;
+    padding-bottom: 10px;
+}
+
+.input-row-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Format Buttons */
+.format-buttons-pitch {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.format-btn {
+    padding: 12px;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.format-btn:hover {
+    background: #e8f5e9;
+    border-color: #10b981;
+    color: #10b981;
+}
+
+.format-btn.active {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-color: #10b981;
+}
+
+/* Weather Grid */
+.weather-grid-pitch {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+}
+
+.weather-btn-pitch {
+    padding: 15px 10px;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.weather-btn-pitch:hover {
+    background: #e0f2fe;
+    border-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.weather-btn-pitch.active {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    border-color: #0ea5e9;
+}
+
+.weather-icon-large {
+    font-size: 2rem;
+}
+
+.weather-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.weather-btn-pitch.active .weather-name {
+    color: white;
+}
+
+/* Day Selector */
+.day-selector {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.day-btn {
+    padding: 12px;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.day-btn:hover {
+    background: #fff7ed;
+    border-color: #f59e0b;
+    color: #f59e0b;
+}
+
+.day-btn.active {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    border-color: #f59e0b;
+}
+
+/* Time Buttons */
+.time-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.time-btn {
+    padding: 12px;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.time-btn:hover {
+    background: #fef3c7;
+    border-color: #fbbf24;
+    color: #f59e0b;
+}
+
+.time-btn.active {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: white;
+    border-color: #fbbf24;
+}
+
+/* Range Slider */
+.range-slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #10b981;
+    cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #10b981;
+    cursor: pointer;
+    border: none;
+}
+
+.range-value {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #10b981;
+    font-size: 1.1rem;
+}
+
+/* Action Buttons */
+.pitch-action-buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.pitch-predict-button {
+    padding: 15px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pitch-predict-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(16, 185, 129, 0.4);
+}
+
+.pitch-reset-button {
+    padding: 15px;
+    background: #f8f9fa;
+    color: #666;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pitch-reset-button:hover {
+    background: white;
+    border-color: #999;
+    color: #333;
+}
+
+/* Result Section */
+.pitch-result-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pitch-result-section h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #10b981;
+    padding-bottom: 10px;
+}
+
+.pitch-result-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Predicted Pitch Card */
+.predicted-pitch-card {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #10b981;
+}
+
+.pitch-type-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.pitch-icon-large {
+    font-size: 4rem;
+}
+
+.pitch-type-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: #10b981;
+}
+
+.pitch-type-info p {
+    margin: 0;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.pitch-confidence-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.confidence-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.confidence-label {
+    font-weight: 600;
+    color: #666;
+}
+
+.confidence-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+.confidence-badge-pitch {
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.pitch-characteristics-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.char-tag {
+    padding: 8px 16px;
+    background: white;
+    border: 2px solid #10b981;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #10b981;
+    font-weight: 600;
+}
+
+/* Top Predictions */
+.top-predictions {
+    margin-bottom: 30px;
+}
+
+.predictions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.prediction-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e0e0e0;
+    position: relative;
+    text-align: center;
+}
+
+.prediction-rank {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #10b981;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.prediction-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.prediction-card h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.probability-bar {
+    width: 100%;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.probability-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.probability-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Characteristics */
+.pitch-characteristics {
+    margin-bottom: 30px;
+}
+
+.characteristics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.characteristic-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #10b981;
+}
+
+.char-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.char-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.char-rating {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #10b981;
+}
+
+.rating-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.rating-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.char-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Venue Info */
+.venue-info-card {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #3b82f6;
+}
+
+.venue-info-card h3 {
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.venue-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.venue-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.detail-value {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Recommendations */
+.recommendations-section {
+    margin-bottom: 30px;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-card {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #fbbf24;
+    text-align: center;
+}
+
+.rec-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.recommendation-card h4 {
+    color: #92400e;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.recommendation-card p {
+    color: #78350f;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Conditions Summary */
+.conditions-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.conditions-summary h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.condition-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.condition-label {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.condition-value {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Disclaimer */
+.pitch-disclaimer {
+    padding: 20px;
+    background: #fef3c7;
+    border: 2px solid #fbbf24;
+    border-radius: 10px;
+    color: #92400e;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.pitch-disclaimer strong {
+    font-weight: 700;
+}
+
+/* Info Section */
+.pitch-info-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.pitch-info-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #10b981;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h4 {
+    color: #10b981;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.info-card p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pitch-predictor-container {
+        padding: 15px;
+    }
+
+    .pitch-predictor-header h1 {
+        font-size: 2rem;
+    }
+
+    .pitch-input-section,
+    .pitch-result-section,
+    .pitch-info-section {
+        padding: 25px;
+    }
+
+    .input-row-two {
+        grid-template-columns: 1fr;
+    }
+
+    .pitch-action-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .format-buttons-pitch,
+    .weather-grid-pitch,
+    .day-selector,
+    .time-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .pitch-type-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .predictions-grid,
+    .characteristics-grid,
+    .recommendations-grid,
+    .info-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pitch-confidence-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .pitch-input-section,
+    .pitch-info-section {
+        display: none;
+    }
+
+    .pitch-result-section {
+        box-shadow: none;
+    }
+}
+
+/* Slider Container */
+.slider-container-fixed {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.pitch-slider {
+    width: 100%;
+    /* Changed from 100% to calc */
+    height: 8px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.pitch-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #4ade80;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(74, 222, 128, 0.4);
+}
+
+.pitch-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #4ade80;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(74, 222, 128, 0.4);
+}
+
+.slider-value-display {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-current-value {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--text-primary);
+}

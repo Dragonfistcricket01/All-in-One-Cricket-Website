@@ -1,0 +1,201 @@
+.chatbot-selection-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.selection-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.selection-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.selection-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.chatbot-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.chatbot-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.ai-card {
+    border-top: 4px solid #ff6b35;
+}
+
+.rule-card {
+    border-top: 4px solid #4a90e2;
+}
+
+.card-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chatbot-card h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.card-features {
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+.feature {
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.feature:last-child {
+    border-bottom: none;
+}
+
+.card-badges {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badge {
+    padding: 6px 14px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #666;
+    border: 1px solid #e0e0e0;
+}
+
+.card-action {
+    text-align: center;
+}
+
+.select-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ai-button {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+    color: white;
+}
+
+.rule-button {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    color: white;
+}
+
+.select-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Comparison Section */
+.comparison-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comparison-table th {
+    background: #f8f9fa;
+    font-weight: 700;
+    color: #333;
+}
+
+.comparison-table td {
+    color: #666;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chatbot-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .selection-header h1 {
+        font-size: 2rem;
+    }
+
+    .chatbot-card {
+        padding: 30px;
+    }
+
+    .comparison-section {
+        padding: 25px;
+        overflow-x: auto;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,919 @@
+/* ==================== PLAYER RANKINGS PAGE ==================== */
+.player-rankings-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    padding-bottom: 4rem;
+}
+
+/* ==================== PAGE HEADER ==================== */
+.rankings-header-player-rankings {
+    /*background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);*/
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+.rankings-header-player-rankings .header-content-player-rankings h1 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rankings-header-player-rankings .header-content-player-rankings h1 i {
+    color: var(--accent);
+    font-size: 2.5rem;
+}
+
+.rankings-header-player-rankings .header-content-player-rankings p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* ==================== FORMAT TABS ==================== */
+.format-tabs-player-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.format-tab-player-rankings {
+    flex: 1;
+    padding: 1.25rem 2rem;
+    background: var(--card-bg);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.format-tab-player-rankings:hover {
+    background: rgba(255, 99, 0, 0.1);
+    border-color: rgba(255, 99, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.format-tab-player-rankings.active {
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    border-color: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.tab-icon-player-rankings {
+    font-size: 1.5rem;
+}
+
+/* ==================== TYPE TABS ==================== */
+.type-tabs-player-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.type-tab-player-rankings {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    background: var(--card-bg);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.type-tab-player-rankings:hover {
+    background: rgba(255, 99, 0, 0.1);
+    border-color: rgba(255, 99, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.type-tab-player-rankings.active {
+    background: rgba(255, 99, 0, 0.15);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.type-tab-player-rankings i {
+    font-size: 1.2rem;
+}
+
+/* ==================== CONTROLS ==================== */
+.rankings-controls-player-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.controls-container-player-rankings {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Box */
+.search-box-player-rankings {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.search-box-player-rankings i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.search-box-player-rankings input {
+    width: 100%;
+    padding: 12px 48px 12px 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-box-player-rankings input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.search-box-player-rankings input::placeholder {
+    color: var(--text-secondary);
+}
+
+.clear-search-player-rankings {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.clear-search-player-rankings:hover {
+    background: transparent;
+    color: white;
+}
+
+/* Filter Group */
+.filter-group-player-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+}
+
+.filter-group-player-rankings label {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filter-group-player-rankings label i {
+    color: var(--accent);
+}
+
+.filter-group-player-rankings select {
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filter-group-player-rankings select:focus {
+    outline: none;
+    border-color: #ff6300;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.filter-group-player-rankings select option {
+    background: var(--card-bg);
+    color: var(--text-primary);
+}
+
+.clear-filters-btn-player-rankings {
+    padding: 12px 20px;
+    background: rgba(239, 68, 68, 0.2);
+    border: 2px solid #ef4444;
+    border-radius: 10px;
+    color: #ef4444;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.clear-filters-btn-player-rankings:hover {
+    background: #ef4444;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ==================== MAIN CONTENT ==================== */
+.rankings-main-player-rankings {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2rem;
+}
+
+/* ==================== TRENDING SIDEBAR ==================== */
+.trending-sidebar-player-rankings {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.trending-sidebar-player-rankings h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trending-sidebar-player-rankings h3 i {
+    color: var(--accent);
+    animation: flame 2s ease-in-out infinite;
+}
+
+@keyframes flame {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.trending-subtitle-player-rankings {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.trending-list-player-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.trending-item-player-rankings {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trending-item-player-rankings:hover {
+    background: rgba(255, 99, 0, 0.05);
+    border-color: rgba(255, 99, 0, 0.3);
+    transform: translateX(5px);
+}
+
+.trending-rank-player-rankings {
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.trending-info-player-rankings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.trending-player-player-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trending-flag-player-rankings {
+    font-size: 1.2rem;
+}
+
+.trending-name-player-rankings {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.trending-change-player-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #4caf50;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.trending-change-player-rankings i {
+    font-size: 1rem;
+}
+
+.trending-flag-player-rankings img {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.trending-name-player-rankings {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.trending-change-player-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #4caf50;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.trending-change-player-rankings i {
+    font-size: 1rem;
+}
+
+/* ==================== RANKINGS CONTENT ==================== */
+.rankings-content-player-rankings {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rankings-header-row-player-rankings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 99, 0, 0.2);
+}
+
+.rankings-header-row-player-rankings h2 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.results-count-player-rankings {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.rankings-list-player-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ==================== RANKING CARD ==================== */
+.ranking-card-player-rankings {
+    display: grid;
+    grid-template-columns: 80px 80px 1fr 120px 80px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-card-player-rankings:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 99, 0, 0.3);
+    transform: translateX(5px);
+}
+
+/* Top 3 special styling */
+.ranking-card-player-rankings.rank-1 {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.ranking-card-player-rankings.rank-2 {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.1) 0%, rgba(192, 192, 192, 0.05) 100%);
+    border-color: rgba(192, 192, 192, 0.3);
+}
+
+.ranking-card-player-rankings.rank-3 {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.1) 0%, rgba(205, 127, 50, 0.05) 100%);
+    border-color: rgba(205, 127, 50, 0.3);
+}
+
+/* Rank Badge */
+.rank-badge-player-rankings {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rank-1 .rank-badge-player-rankings {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+}
+
+.rank-2 .rank-badge-player-rankings {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+}
+
+.rank-3 .rank-badge-player-rankings {
+    background: linear-gradient(135deg, #cd7f32 0%, #e19952 100%);
+}
+
+.rank-number-player-rankings {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.rank-1 .rank-number-player-rankings,
+.rank-2 .rank-number-player-rankings,
+.rank-3 .rank-number-player-rankings {
+    color: #1a1a1a;
+}
+
+/*.trophy-icon-player-rankings {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 1rem;
+}*/
+
+/* Player Image */
+.player-image-container-player-rankings {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 99, 0, 0.3);
+}
+
+.player-image-player-rankings {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*.country-badge-player-rankings {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: var(--card-bg);
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid rgba(255, 99, 0, 0.5);
+}*/
+
+.flag-player-rankings {
+    font-size: 1.2rem;
+}
+
+/* Player Info */
+.player-info-player-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.player-name-player-rankings {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.player-country-player-rankings {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Rating Section */
+.rating-section-player-rankings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.rating-value-player-rankings {
+    color: #ff6300;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Courier New', monospace;
+}
+
+.rating-label-player-rankings {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rating-change-player-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+}
+
+.rating-change-player-rankings.positive {
+    color: #4caf50;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.rating-change-player-rankings.negative {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+/* Rank Change Section */
+.rank-change-section-player-rankings {
+    display: flex;
+    justify-content: center;
+}
+
+.rank-change-player-rankings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.rank-up-player-rankings {
+    background: rgba(76, 175, 80, 0.15);
+    color: #4caf50;
+    border: 2px solid rgba(76, 175, 80, 0.3);
+}
+
+.rank-down-player-rankings {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.rank-same-player-rankings {
+    background: rgba(158, 158, 158, 0.15);
+    color: #9e9e9e;
+    border: 2px solid rgba(158, 158, 158, 0.3);
+}
+
+.rank-change-player-rankings i {
+    font-size: 1.5rem;
+}
+
+.rank-change-player-rankings span {
+    font-size: 1rem;
+}
+
+/* ==================== NO RESULTS ==================== */
+.no-results-player-rankings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+.no-results-player-rankings i {
+    font-size: 4rem;
+    color: var(--text-secondary);
+}
+
+.no-results-player-rankings h3 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.no-results-player-rankings p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.reset-btn-player-rankings {
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #ff6300 0%, #ff3300 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.reset-btn-player-rankings i{
+    color: white;
+}
+
+.reset-btn-player-rankings:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 0, 0.4);
+}
+
+/* ==================== FOOTER ==================== */
+.rankings-footer-player-rankings {
+    max-width: 1400px;
+    margin: 2rem auto 0;
+    padding: 0 2rem;
+}
+
+.footer-content-player-rankings {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.footer-note-player-rankings {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+}
+
+.footer-note-player-rankings i {
+    color: #ff6300;
+    font-size: 1.5rem;
+}
+
+/* ==================== LOADING STATE ==================== */
+.loading-container-player-rankings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 1rem;
+}
+
+.loading-container-player-rankings i {
+    font-size: 3rem;
+    color: var(--accent);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container-player-rankings p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+    .rankings-main-player-rankings {
+        grid-template-columns: 1fr;
+    }
+
+    .trending-sidebar-player-rankings {
+        position: static;
+    }
+}
+
+@media (max-width: 968px) {
+
+    .format-tabs-player-rankings,
+    .type-tabs-player-rankings {
+        padding: 1.5rem 1rem 0;
+    }
+
+    .rankings-controls-player-rankings {
+        padding: 1.5rem 1rem;
+    }
+
+    .rankings-main-player-rankings {
+        padding: 0 1rem 2rem;
+    }
+
+    .controls-container-player-rankings {
+        flex-direction: column;
+    }
+
+    .search-box-player-rankings,
+    .filter-group-player-rankings {
+        width: 100%;
+    }
+
+    .clear-filters-btn-player-rankings {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ranking-card-player-rankings {
+        grid-template-columns: 60px 60px 1fr;
+        gap: 1rem;
+    }
+
+    .rating-section-player-rankings,
+    .rank-change-section-player-rankings {
+        display: none;
+    }
+
+    .player-info-player-rankings {
+        grid-column: 3 / 4;
+    }
+}
+
+@media (max-width: 768px) {
+    .rankings-header-player-rankings {
+        padding: 2rem 1rem;
+    }
+
+    .rankings-header-player-rankings .header-content-player-rankings h1 {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .format-tabs-player-rankings,
+    .type-tabs-player-rankings {
+        flex-direction: column;
+    }
+
+    .format-tab-player-rankings,
+    .type-tab-player-rankings {
+        width: 100%;
+    }
+
+    .trending-sidebar-player-rankings {
+        padding: 1.5rem;
+    }
+
+    .rankings-content-player-rankings {
+        padding: 1.5rem;
+    }
+
+    .ranking-card-player-rankings {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rankings-header-player-rankings .header-content-player-rankings h1 {
+        font-size: 1.5rem;
+    }
+
+    .rank-badge-player-rankings {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rank-number-player-rankings {
+        font-size: 1.5rem;
+    }
+
+    .player-image-container-player-rankings {
+        width: 50px;
+        height: 50px;
+    }
+
+    .player-name-player-rankings {
+        font-size: 1rem;
+    }
+
+    .player-country-player-rankings {
+        font-size: 0.8rem;
+    }
+}
+
+.player-name-with-flag-player-rankings {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.flag-image-inline-player-rankings {
+    width: 32px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.trending-flag-image-player-rankings {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}

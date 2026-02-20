@@ -1,0 +1,263 @@
+.size-guide-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200000;
+    padding: 2rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.size-guide-modal {
+    background: var(--card-bg);
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.size-guide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.size-guide-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.size-guide-icon {
+    font-size: 2.5rem;
+}
+
+.size-guide-title h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+.size-guide-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(239, 68, 68, 0.2);
+    border: none;
+    color: #ef4444;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.size-guide-close:hover {
+    background: #ef4444;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Content */
+.size-guide-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.size-guide-content h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.size-guide-content h3 i {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+/* How to Measure */
+.how-to-measure {
+    background: rgba(255, 99, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 99, 0, 0.3);
+}
+
+.how-to-measure p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Size Chart */
+.size-chart {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.size-table-wrapper {
+    overflow-x: auto;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.size-table thead {
+    background: rgba(255, 99, 0, 0.2);
+}
+
+.size-table th {
+    padding: 1rem;
+    text-align: left;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.size-table td {
+    padding: 1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.size-table tbody tr:hover {
+    background: rgba(255, 99, 0, 0.05);
+}
+
+.size-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Size Tips */
+.size-tips {
+    background: rgba(59, 130, 246, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.size-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.size-tips li {
+    color: var(--text-secondary);
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.size-tips li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Scrollbar */
+.size-guide-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.size-guide-modal::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.size-guide-modal::-webkit-scrollbar-thumb {
+    background: #ff6300;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .size-guide-overlay {
+        padding: 1rem;
+    }
+
+    .size-guide-header {
+        padding: 1.5rem;
+    }
+
+    .size-guide-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .size-guide-content {
+        padding: 1.5rem;
+    }
+
+    .size-guide-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .size-guide-icon {
+        font-size: 2rem;
+    }
+
+    .size-guide-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

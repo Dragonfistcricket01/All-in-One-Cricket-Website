@@ -1,0 +1,1035 @@
+/*
+// ===================================
+// 	🎨 ADVANCED DOODLE CRICKET STYLES
+// 	=================================== 
+
+.doodle-cricket-advanced {
+	min-height: 100vh;
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+	padding: 2rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	position: relative;
+	overflow-x: hidden;
+}
+
+// ===================================
+// 	HEADER
+// 	=================================== 
+.game-header {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: white;
+	position: relative;
+	z-index: 10;
+}
+
+.game-header h1 {
+	font-size: 3.5rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(45deg, #FFD700, #FFA500, #FF6347);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+
+	0%,
+	100% {
+		filter: brightness(1);
+	}
+
+	50% {
+		filter: brightness(1.3);
+	}
+}
+
+.header-stats {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.stat-box {
+	background: rgba(255, 255, 255, 0.15);
+	padding: 1rem 2rem;
+	border-radius: 15px;
+	backdrop-filter: blur(10px);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+	display: block;
+	font-size: 0.9rem;
+	opacity: 0.9;
+	margin-bottom: 0.3rem;
+}
+
+.stat-value {
+	display: block;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+// ===================================
+// 	MENU SCREEN
+// 	=================================== 
+.menu-screen {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem;
+}
+
+.menu-card {
+	background: white;
+	border-radius: 25px;
+	padding: 3rem;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.menu-card h2 {
+	font-size: 2.5rem;
+	color: #2d3436;
+	margin-bottom: 0.5rem;
+	font-weight: 800;
+}
+
+.menu-subtitle {
+	color: #636e72;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+// Difficulty Selector 
+.difficulty-selector {
+	margin-bottom: 2rem;
+}
+
+.difficulty-selector label {
+	display: block;
+	font-weight: 700;
+	color: #2d3436;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+
+.difficulty-buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.8rem;
+}
+
+.diff-btn {
+	padding: 1rem;
+	border: 2px solid #dee2e6;
+	background: white;
+	border-radius: 12px;
+	font-weight: 700;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	color: #2d3436;
+}
+
+.diff-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.diff-btn.active {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border-color: #667eea;
+}
+
+// Start Button 
+.start-button {
+	width: 100%;
+	padding: 1.5rem;
+	background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+	color: white;
+	border: none;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	font-weight: 800;
+	cursor: pointer;
+	transition: all 0.3s;
+	box-shadow: 0 8px 20px rgba(0, 184, 148, 0.4);
+	margin-bottom: 2rem;
+}
+
+.start-button:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 12px 30px rgba(0, 184, 148, 0.6);
+}
+
+// Features Grid 
+.features-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+.feature-item {
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	padding: 1rem;
+	border-radius: 12px;
+	border: 2px solid #dee2e6;
+	font-weight: 700;
+	color: #2d3436;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+.feature-item:hover {
+	transform: scale(1.05);
+	border-color: #667eea;
+}
+
+// ===================================
+// 	ACHIEVEMENTS SIDEBAR
+// 	=================================== 
+.achievements-sidebar {
+	background: white;
+	border-radius: 25px;
+	padding: 2rem;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+.achievements-sidebar h3 {
+	color: #2d3436;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-weight: 800;
+}
+
+.achievements-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.achievement-badge {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+	animation: badgeGlow 2s ease-in-out infinite;
+}
+
+@keyframes badgeGlow {
+
+	0%,
+	100% {
+		box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+	}
+
+	50% {
+		box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+	}
+}
+
+.achievement-emoji {
+	font-size: 2rem;
+}
+
+.achievement-info {
+	flex: 1;
+}
+
+.achievement-name {
+	font-weight: 800;
+	color: #2d3436;
+	margin-bottom: 0.2rem;
+}
+
+.achievement-desc {
+	font-size: 0.85rem;
+	color: #636e72;
+}
+
+// ===================================
+// 	MODE SELECTION
+// 	=================================== 
+.mode-select-screen {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.mode-select-screen h2 {
+	color: white;
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	font-weight: 800;
+}
+
+.game-modes-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.mode-card {
+	background: white;
+	border-radius: 20px;
+	padding: 2rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	border: 3px solid transparent;
+}
+
+.mode-card:hover {
+	transform: translateY(-10px) scale(1.05);
+	border-color: #667eea;
+	box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+}
+
+.mode-card h3 {
+	color: #2d3436;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	font-weight: 800;
+}
+
+.mode-card p {
+	color: #636e72;
+	font-size: 1.1rem;
+	margin: 0.5rem 0;
+	font-weight: 600;
+}
+
+.mode-card .target {
+	color: #00b894;
+	font-weight: 800;
+	font-size: 1.3rem;
+}
+
+.back-btn {
+	padding: 1rem 3rem;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	border: 2px solid white;
+	border-radius: 12px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.back-btn:hover {
+	background: white;
+	color: #2d3436;
+}
+
+// ===================================
+// 	PLAYING SCREEN
+// 	=================================== 
+.playing-screen {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+// Scoreboard 
+.scoreboard-advanced {
+	background: white;
+	border-radius: 20px;
+	padding: 2rem;
+	margin-bottom: 1.5rem;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.score-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.score-number {
+	font-size: 4.5rem;
+	font-weight: 800;
+	color: #667eea;
+	line-height: 1;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score-label {
+	font-size: 1rem;
+	color: #636e72;
+	font-weight: 700;
+}
+
+.score-details {
+	display: flex;
+	gap: 2rem;
+}
+
+.detail-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.detail-item.target {
+	background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+	padding: 0.5rem 1rem;
+	border-radius: 12px;
+	color: white;
+}
+
+.detail-label {
+	font-size: 0.9rem;
+	color: #636e72;
+	margin-bottom: 0.3rem;
+}
+
+.detail-item.target .detail-label {
+	color: white;
+	opacity: 0.9;
+}
+
+.detail-value {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #2d3436;
+}
+
+.detail-item.target .detail-value {
+	color: white;
+}
+
+// Active Power-ups 
+.active-powerups {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	justify-content: center;
+}
+
+.powerup-badge {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 0.8rem 1.5rem;
+	border-radius: 20px;
+	font-weight: 700;
+	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+	animation: powerupPulse 1s ease-in-out infinite;
+}
+
+@keyframes powerupPulse {
+
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+}
+
+// Commentary 
+.commentary-box {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	color: white;
+	padding: 1rem 2rem;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// Last Shot 
+.last-shot-advanced {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3.5rem;
+	font-weight: 800;
+	color: white;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	animation: shotBurst 1.5s ease-out;
+	z-index: 1000;
+	pointer-events: none;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	padding: 1.5rem 3rem;
+	border-radius: 20px;
+	border: 3px solid white;
+}
+
+.last-shot-advanced.out {
+	background: linear-gradient(135deg, #ff4757 0%, #ee5a6f 100%);
+}
+
+@keyframes shotBurst {
+	0% {
+		transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+		opacity: 0;
+	}
+
+	50% {
+		transform: translate(-50%, -50%) scale(1.2) rotate(0deg);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1) rotate(0deg);
+		opacity: 0;
+	}
+}
+
+// Achievement Unlock 
+.achievement-unlock {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+	animation: slideInRight 0.5s ease, glowPulse 2s ease-in-out infinite;
+	z-index: 2000;
+	border: 3px solid white;
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(400px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes glowPulse {
+
+	0%,
+	100% {
+		box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+	}
+
+	50% {
+		box-shadow: 0 15px 40px rgba(255, 215, 0, 0.8);
+	}
+}
+
+.unlock-content {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.unlock-emoji {
+	font-size: 3rem;
+}
+
+.unlock-title {
+	font-weight: 800;
+	color: #2d3436;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.unlock-name {
+	font-size: 1.3rem;
+	font-weight: 800;
+	color: #2d3436;
+}
+
+// ===================================
+// 	GAME AREA
+// 	=================================== 
+.game-area-advanced {
+	background: linear-gradient(180deg, #87CEEB 0%, #98D8C8 40%, #90EE90 100%);
+	border-radius: 20px;
+	height: 550px;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	border: 5px solid white;
+}
+
+// Stadium Background 
+.stadium-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.crowd {
+	position: absolute;
+	width: 20%;
+	height: 40%;
+	top: 10%;
+	background: repeating-linear-gradient(90deg,
+				#FF6B6B 0px,
+				#FFD93D 5px,
+				#6BCB77 10px,
+				#4D96FF 15px,
+				#FF6B6B 20px);
+	opacity: 0.6;
+	animation: crowdWave 3s ease-in-out infinite;
+}
+
+.left-crowd {
+	left: 0;
+	border-radius: 0 100% 100% 0;
+}
+
+.right-crowd {
+	right: 0;
+	border-radius: 100% 0 0 100%;
+	animation-delay: 1.5s;
+}
+
+@keyframes crowdWave {
+
+	0%,
+	100% {
+		transform: scaleY(1);
+	}
+
+	50% {
+		transform: scaleY(1.1);
+	}
+}
+
+.scoreboard-display {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.8);
+	color: #FFD700;
+	padding: 0.5rem 2rem;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	font-weight: 800;
+	border: 2px solid #FFD700;
+}
+
+// Ball with Physics 
+.cricket-ball-advanced {
+	position: absolute;
+	font-size: 2.5rem;
+	top: 0;
+	z-index: 10;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.cricket-ball-advanced.swing {
+	animation: ballSwing 0.5s ease-in-out infinite alternate !important;
+}
+
+@keyframes ballSwing {
+	from {
+		transform: translateX(-10px);
+	}
+
+	to {
+		transform: translateX(10px);
+	}
+}
+
+.cricket-ball-advanced.spin {
+	animation: ballSpin 0.3s linear infinite !important;
+}
+
+@keyframes ballSpin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes ballFallAdvanced {
+	0% {
+		top: 0;
+		transform: translateX(-50%) scale(0.5);
+	}
+
+	100% {
+		top: 82%;
+		transform: translateX(-50%) scale(1);
+	}
+}
+
+// Power-up Indicator 
+.powerup-indicator {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3rem;
+	animation: powerupFloat 1s ease-in-out infinite;
+	z-index: 5;
+}
+
+@keyframes powerupFloat {
+
+	0%,
+	100% {
+		transform: translateX(-50%) translateY(0);
+	}
+
+	50% {
+		transform: translateX(-50%) translateY(-20px);
+	}
+}
+
+// Bat 
+.cricket-bat-advanced {
+	position: absolute;
+	bottom: 12%;
+	font-size: 3.5rem;
+	transform: translateX(-50%);
+	transition: left 0.1s ease-out;
+	z-index: 5;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.cricket-bat-advanced.swinging {
+	animation: batSwingAdvanced 0.3s ease-out;
+}
+
+@keyframes batSwingAdvanced {
+	0% {
+		transform: translateX(-50%) rotate(0deg) scale(1);
+	}
+
+	50% {
+		transform: translateX(-50%) rotate(-45deg) scale(1.1);
+	}
+
+	100% {
+		transform: translateX(-50%) rotate(0deg) scale(1);
+	}
+}
+
+// Stumps 
+.stumps-advanced {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3rem;
+	z-index: 1;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+// Pitch Lines 
+.pitch-line {
+	position: absolute;
+	bottom: 20%;
+	width: 100%;
+	height: 4px;
+	background: rgba(139, 69, 19, 0.6);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.crease-line {
+	position: absolute;
+	bottom: 15%;
+	width: 100%;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.game-hint-advanced {
+	text-align: center;
+	margin-top: 1rem;
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	padding: 0.8rem;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+	backdrop-filter: blur(10px);
+}
+
+// ===================================
+// 	GAME OVER SCREEN
+// 	=================================== 
+.gameover-screen-advanced {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.gameover-card-advanced {
+	background: white;
+	border-radius: 25px;
+	padding: 3rem;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+.gameover-card-advanced h2 {
+	font-size: 2.5rem;
+	color: #2d3436;
+	margin-bottom: 2rem;
+	font-weight: 800;
+}
+
+.final-score-advanced {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border-radius: 20px;
+	padding: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.final-score-label {
+	display: block;
+	color: white;
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+	opacity: 0.95;
+}
+
+.final-score-value {
+	display: block;
+	font-size: 4.5rem;
+	font-weight: 800;
+	color: white;
+}
+
+// Match Stats 
+.match-stats {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.stat-row {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	background: #f8f9fa;
+	border-radius: 12px;
+	border: 2px solid #dee2e6;
+}
+
+.stat-row.new-record {
+	background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+	border-color: #FFD700;
+	animation: recordShine 1s ease-in-out infinite;
+}
+
+@keyframes recordShine {
+
+	0%,
+	100% {
+		box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+	}
+
+	50% {
+		box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+	}
+}
+
+.stat-icon {
+	font-size: 1.5rem;
+}
+
+.stat-row span:last-child {
+	font-weight: 700;
+	color: #2d3436;
+	font-size: 1.1rem;
+}
+
+// Name Input 
+.name-input-section {
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+	background: #f8f9fa;
+	border-radius: 15px;
+	border: 2px solid #dee2e6;
+}
+
+.name-input-section p {
+	color: #2d3436;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+
+.name-input {
+	width: 100%;
+	padding: 1.2rem;
+	border: 2px solid #dee2e6;
+	border-radius: 12px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.name-input:focus {
+	outline: none;
+	border-color: #667eea;
+}
+
+.submit-score-btn {
+	width: 100%;
+	padding: 1rem;
+	background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+	color: white;
+	border: none;
+	border-radius: 12px;
+	font-size: 1.2rem;
+	font-weight: 800;
+	cursor: pointer;
+	transition: all 0.3s;
+	margin-bottom: 0.5rem;
+}
+
+.submit-score-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
+}
+
+.skip-btn {
+	width: 100%;
+	padding: 0.8rem;
+	background: #e9ecef;
+	color: #636e72;
+	border: none;
+	border-radius: 12px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.skip-btn:hover {
+	background: #dee2e6;
+}
+
+// Game Over Actions 
+.gameover-actions {
+	display: flex;
+	gap: 1rem;
+}
+
+.play-again-btn,
+.menu-btn {
+	flex: 1;
+	padding: 1.5rem;
+	border: none;
+	border-radius: 15px;
+	font-size: 1.2rem;
+	font-weight: 800;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.play-again-btn {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+}
+
+.play-again-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+}
+
+.menu-btn {
+	background: #e9ecef;
+	color: #2d3436;
+}
+
+.menu-btn:hover {
+	background: #dee2e6;
+}
+
+// ===================================
+// 	RESPONSIVE
+// 	=================================== 
+@media (max-width: 1200px) {
+	.menu-screen {
+		grid-template-columns: 1fr;
+	}
+
+	.achievements-sidebar {
+		max-height: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	.game-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.difficulty-buttons {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.game-modes-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.scoreboard-advanced {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.score-details {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.features-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.gameover-actions {
+		flex-direction: column;
+	}
+
+	.game-area-advanced {
+		height: 450px;
+	}
+}
+*/

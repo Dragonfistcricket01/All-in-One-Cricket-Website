@@ -1,0 +1,324 @@
+/* CSS Variables for Theming */
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --card-bg: #ffffff;
+}
+
+.dark-mode {
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --card-bg: #2d2d2d;
+}
+
+/* Dark Mode Body */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Default Light Mode Body */
+body {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+/* App Container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Page Container */
+.page-container {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: all 0.4s ease;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.page-title::after {
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 4px;
+    background: linear-gradient(135deg, #ff7800 0%, #ff9a00 100%);
+    border-radius: 2px;
+}
+
+/* Page Description */
+.page-description {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+.loading i {
+  font-size: 3rem;
+  color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.error-message {
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dark-mode .error-message {
+  background: #4a1f1f;
+  border-color: #6a2f2f;
+  color: #ff6b6b;
+}
+
+/* Success Message */
+.success-message {
+  background: #efe;
+  border: 1px solid #cfc;
+  color: #3c3;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dark-mode .success-message {
+  background: #1f4a1f;
+  border-color: #2f6a2f;
+  color: #6bff6b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .page-container {
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+/* Header Layout */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 1rem;
+}
+
+body.dark-mode .app-header {
+  background: #252525;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.header-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-clock {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+body.dark-mode .header-clock {
+  background: linear-gradient(135deg, #434343, #2a2a2a);
+}
+
+.header-clock .time {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.header-clock .date {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+.theme-btn,
+.account-btn,
+.menu-btn {
+  background: none;
+  border: 2px solid #ff3300;
+  color: #ff3300;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover,
+.account-btn:hover,
+.menu-btn:hover {
+  background: #ff3300;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .app-header {
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .header-logo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .header-logo {
+    height: 50px;
+  }
+
+  /* Ticker goes to second row on mobile */
+  .live-score-ticker {
+    order: 10;
+    width: 100%;
+    max-width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+}
+
+/* Custom scrollbar for filters */
+.filters-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filters-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filters-sidebar::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.filters-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+/* Fix dropdown text in dark mode */
+select option {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.account-dropdown {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.account-dropdown a,
+.account-dropdown button {
+  color: var(--text-primary) !important;
+}
+
+.account-dropdown a:hover,
+.account-dropdown button:hover {
+  background: var(--hover-bg);
+}
+
+/* Menu toggle larger click area */
+.menu-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 120, 0, 0.1);
+}
+
+.menu-toggle i {
+  font-size: 1.8rem;
+  color: #ff7800;
+}
