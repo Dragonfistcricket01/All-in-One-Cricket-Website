@@ -25,7 +25,7 @@ import CommunityHub from './components/CommunityHub';
 import FanClub from './components/FanClub';
 import ContentGenerator from './components/ContentGenerator';
 import TeamBuilder from './components/TeamBuilder';
-import DoodleCricket from './components/DoodleCricket';
+//import DoodleCricket from './components/DoodleCricket';
 import DailyRewards from './components/DailyRewards';
 import Settings from './components/Settings';
 import Contact from './components/Contact';

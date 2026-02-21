@@ -1,7 +1,7 @@
 /*
-// ===================================
-// 	🎨 ADVANCED DOODLE CRICKET STYLES
-// 	=================================== 
+ ===================================
+ 	🎨 ADVANCED DOODLE CRICKET STYLES
+ 	=================================== 
 
 .doodle-cricket-advanced {
 	min-height: 100vh;
@@ -12,9 +12,9 @@
 	overflow-x: hidden;
 }
 
-// ===================================
-// 	HEADER
-// 	=================================== 
+ ===================================
+ 	HEADER
+ 	=================================== 
 .game-header {
 	text-align: center;
 	margin-bottom: 2rem;
@@ -75,9 +75,9 @@
 	font-weight: 800;
 }
 
-// ===================================
-// 	MENU SCREEN
-// 	=================================== 
+ ===================================
+ 	MENU SCREEN
+ 	=================================== 
 .menu-screen {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -106,7 +106,7 @@
 	margin-bottom: 2rem;
 }
 
-// Difficulty Selector 
+ Difficulty Selector 
 .difficulty-selector {
 	margin-bottom: 2rem;
 }
@@ -148,7 +148,7 @@
 	border-color: #667eea;
 }
 
-// Start Button 
+ Start Button 
 .start-button {
 	width: 100%;
 	padding: 1.5rem;
@@ -169,7 +169,7 @@
 	box-shadow: 0 12px 30px rgba(0, 184, 148, 0.6);
 }
 
-// Features Grid 
+ Features Grid 
 .features-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -192,9 +192,9 @@
 	border-color: #667eea;
 }
 
-// ===================================
-// 	ACHIEVEMENTS SIDEBAR
-// 	=================================== 
+ ===================================
+ 	ACHIEVEMENTS SIDEBAR
+ 	=================================== 
 .achievements-sidebar {
 	background: white;
 	border-radius: 25px;
@@ -259,9 +259,9 @@
 	color: #636e72;
 }
 
-// ===================================
-// 	MODE SELECTION
-// 	=================================== 
+ ===================================
+ 	MODE SELECTION
+ 	=================================== 
 .mode-select-screen {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -335,15 +335,15 @@
 	color: #2d3436;
 }
 
-// ===================================
-// 	PLAYING SCREEN
-// 	=================================== 
+ ===================================
+ 	PLAYING SCREEN
+ 	=================================== 
 .playing-screen {
 	max-width: 1000px;
 	margin: 0 auto;
 }
 
-// Scoreboard 
+ Scoreboard 
 .scoreboard-advanced {
 	background: white;
 	border-radius: 20px;
@@ -414,7 +414,7 @@
 	color: white;
 }
 
-// Active Power-ups 
+ Active Power-ups 
 .active-powerups {
 	display: flex;
 	gap: 1rem;
@@ -444,7 +444,7 @@
 	}
 }
 
-// Commentary 
+ Commentary 
 .commentary-box {
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
@@ -471,7 +471,7 @@
 	}
 }
 
-// Last Shot 
+ Last Shot 
 .last-shot-advanced {
 	position: fixed;
 	top: 50%;
@@ -511,7 +511,7 @@
 	}
 }
 
-// Achievement Unlock 
+ Achievement Unlock 
 .achievement-unlock {
 	position: fixed;
 	top: 20px;
@@ -572,9 +572,9 @@
 	color: #2d3436;
 }
 
-// ===================================
-// 	GAME AREA
-// 	=================================== 
+ ===================================
+ 	GAME AREA
+ 	=================================== 
 .game-area-advanced {
 	background: linear-gradient(180deg, #87CEEB 0%, #98D8C8 40%, #90EE90 100%);
 	border-radius: 20px;
@@ -586,7 +586,7 @@
 	border: 5px solid white;
 }
 
-// Stadium Background 
+ Stadium Background 
 .stadium-bg {
 	position: absolute;
 	width: 100%;
@@ -646,7 +646,7 @@
 	border: 2px solid #FFD700;
 }
 
-// Ball with Physics 
+ Ball with Physics 
 .cricket-ball-advanced {
 	position: absolute;
 	font-size: 2.5rem;
@@ -695,7 +695,7 @@
 	}
 }
 
-// Power-up Indicator 
+ Power-up Indicator 
 .powerup-indicator {
 	position: absolute;
 	top: 30%;
@@ -718,7 +718,7 @@
 	}
 }
 
-// Bat 
+ Bat 
 .cricket-bat-advanced {
 	position: absolute;
 	bottom: 12%;
@@ -747,7 +747,7 @@
 	}
 }
 
-// Stumps 
+ Stumps 
 .stumps-advanced {
 	position: absolute;
 	bottom: 10%;
@@ -758,7 +758,7 @@
 	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
 }
 
-// Pitch Lines 
+ Pitch Lines 
 .pitch-line {
 	position: absolute;
 	bottom: 20%;
@@ -789,9 +789,9 @@
 	backdrop-filter: blur(10px);
 }
 
-// ===================================
-// 	GAME OVER SCREEN
-// 	=================================== 
+ ===================================
+ 	GAME OVER SCREEN
+ 	=================================== 
 .gameover-screen-advanced {
 	max-width: 700px;
 	margin: 0 auto;
@@ -834,7 +834,7 @@
 	color: white;
 }
 
-// Match Stats 
+ Match Stats 
 .match-stats {
 	display: flex;
 	flex-direction: column;
@@ -880,7 +880,7 @@
 	font-size: 1.1rem;
 }
 
-// Name Input 
+ Name Input 
 .name-input-section {
 	margin-bottom: 2rem;
 	padding: 1.5rem;
@@ -947,7 +947,7 @@
 	background: #dee2e6;
 }
 
-// Game Over Actions 
+ Game Over Actions 
 .gameover-actions {
 	display: flex;
 	gap: 1rem;
@@ -984,9 +984,9 @@
 	background: #dee2e6;
 }
 
-// ===================================
-// 	RESPONSIVE
-// 	=================================== 
+ ===================================
+ 	RESPONSIVE
+ 	=================================== 
 @media (max-width: 1200px) {
 	.menu-screen {
 		grid-template-columns: 1fr;
