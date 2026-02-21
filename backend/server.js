@@ -299,11 +299,13 @@ try {
 }
 
 // =============== START SERVER (ONLY ONCE!) ===============
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0',() => {
     console.log('\n' + '='.repeat(50));
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+    //console.log(`🚀 Server running on http://localhost:${PORT}`);
+    console.log(`🚀 Server is LIVE on port ${PORT}`);
     console.log(`✅ Database connected`);
     console.log(`✅ RapidAPI integration active`);
     console.log(`⏰ Auto-sync enabled: Data will sync every hour`);
+    console.log(`📡 Network: Listening on 0.0.0.0 (Required for Render)`);
     console.log('='.repeat(50) + '\n');
 });
