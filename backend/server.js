@@ -253,7 +253,7 @@ app.get('/api/health', (req, res) => {
 console.log('📂 Loading route modules...');
 
 const teamsRouter = require('./routes/teams');
-const doodleCricketRouter = require('./routes/DoodleCricket');
+const doodleCricketRouter = require('./routes/doodleCricket');
 const dailyRewardsRouter = require('./routes/dailyRewards');
 const rapidAPIRouter = require('./routes/rapidapi');
 const cricAPIRouter = require('./routes/cricapi');
